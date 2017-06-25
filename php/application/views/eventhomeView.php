@@ -39,6 +39,10 @@ defined('BASEPATH') OR exit('No direct script access allowed');
             </tbody>
         </table>
     </div>
+    <p>web app needs a login system</p>
+    <p>description of a subject comes here when you hover over it</p>
+    <p>clicking on the name will go to a detailed page of the event</p>
+    <p>clicking on delete button will delete an event from the list</p>
 </div>
 </body>
 </html>

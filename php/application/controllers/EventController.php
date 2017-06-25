@@ -13,6 +13,11 @@ class EventController extends CI_Controller
         parent::__construct();
     }
 
+    /**
+     * load event model
+     * get all events from model
+     * pass data to the view
+     */
     public function index()
     {
         $this->load->model('eventmodel');
