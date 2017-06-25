@@ -6,7 +6,19 @@
  * Date: 25-6-2017
  * Time: 14:00
  */
-class EventModel
+class EventModel extends CI_Model
 {
+    public function __construct()
+    {
+    }
 
+    public function getAllEvents()
+    {
+        $this->db->select('*');
+        $this->db->from('event_table');
+        $query = $this->db->get();
+
+        return $query->result();
+    }
+    
 }
