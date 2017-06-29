@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Call Log Database</title>
+    <script>
+        var OSName = "";
+        if (navigator.appVersion.indexOf("Win") != -1) OSName = "Windows";
+        if (navigator.appVersion.indexOf("Mac") != -1) OSName = "MacOS";
+        if (navigator.appVersion.indexOf("X11") != -1) OSName = "UNIX";
+        if (navigator.appVersion.indexOf("Linux") != -1) OSName = "Linux";
+        if (navigator.userAgent.indexOf("Android") != -1)
+            OSName = "Android";
+        if (navigator.userAgent.indexOf("iPhone") != -1 ||
+            navigator.userAgent.indexOf("iPod") != -1 ||
+            navigator.userAgent.indexOf("iPad") != -1)
+            OSName = "IOS"
+        $('body').addClass(OSName);
+    </script>
+    <style>
+        body {
+
+            margin: 0;
+            position: relative;
+            background-color: beige ;
+
+        }
+
+        #bodyDiv {
+            padding-top: 50px;
+        }
+
+        ul {
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+            overflow: hidden;
+            background-color: #333;
+            position: fixed;
+            top: 0;
+            width: 100%;
+        }
+
+        li {
+            float: left;
+        }
+
+        li a {
+            display: block;
+            color: white;
+            text-align: center;
+            padding: 14px 16px;
+            text-decoration: none;
+        }
+
+        li a:hover:not(.active) {
+            background-color: #111;
+        }
+
+        .active {
+            background-color: #4CAF50;
+        }
+
+        form {
+            margin: 10px;
+        }
+
+        form.form-row {
+            margin-top: 10px;
+        }
+
+        label {
+            display: block;
+            text-transform: capitalize;
+        }
+
+        input {
+            border: 1px solid #ddd;
+            padding: 2px 5px;
+            font-size: 1.2em;
+            border-radius: 5px;
+            box-shadow: inset 2px 2px 8px #ddd;
+        }
+
+
+        #sticky {
+            width: 100%;
+            padding: 20px 20px 16px;
+            background: rgba(0, 0, 0, .25);
+            color: white;
+            font-weight: bold;
+            font-size: 18px;
+            text-align: center;
+            position: fixed; /*Here's what sticks it*/
+            bottom: 0; /*to the bottom of the body*/
+            left: 0; /*and to the left of the body.*/
+
+            /*EFFECTS*/
+            transition: .33s linear;
+        }
+
+        #sticky:hover {
+            background: black;
+        }
+
+        table {
+            border-collapse: collapse;
+            border-spacing: 0;
+            width: 100%;
+            border: 1px solid #ddd;
+            height: 500px;
+        }
+
+        th, td {
+            border: none;
+            text-align: left;
+            padding: 8px;
+        }
+
+        tr:nth-child(even) {
+            background-color: #f2f2f2
+        }
+
+    </style>
+</head>
+<body>
+<ul>
+    <li><a class="active" href="/eventcaleder/Home">Home</a></li>
+    <li><a href="/eventcalender/Search">Search</a></li>
+    <li><a href="/eventcalender/Create">Create</a></li>
+    <li><a href="/eventcalender/Import">Import</a></li>
+</ul>
+
+
+
