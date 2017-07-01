@@ -34,6 +34,13 @@
       <version>1.2</version>
     </dependency>
   </dependencies>
+  <distributionManagement>
+    <repository>
+      <id>internal.repo</id>
+      <name>Internal repo</name>
+      <url>file:///desktop</url>
+    </repository>
+  </distributionManagement>
   <build>
     <finalName>eventcalender</finalName>
       <plugins>

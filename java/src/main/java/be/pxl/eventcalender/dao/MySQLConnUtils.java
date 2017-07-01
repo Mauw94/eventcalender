@@ -24,6 +24,6 @@ public class MySQLConnUtils {
         } catch (ClassNotFoundException e) {
             e.printStackTrace();
         }
-        return DriverManager.getConnection("jdbc:msql://" + hostName + "/" + dbName, user, password);
+        return DriverManager.getConnection("jdbc:mysql://" + hostName + "/" + dbName, user, password);
     }
 }

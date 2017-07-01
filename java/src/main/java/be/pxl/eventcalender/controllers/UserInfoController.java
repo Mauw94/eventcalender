@@ -28,7 +28,7 @@ public class UserInfoController extends HttpServlet {
         // if no user was found, return to login page
         if (logedinUser == null) {
             resp.sendRedirect("login");
-            errorMessage = "Something went wrong logging you in.";
+            errorMessage = "False login information, please re-enter.";
             req.getSession().setAttribute("errorMessage", errorMessage);
         } else {
 
@@ -36,7 +36,7 @@ public class UserInfoController extends HttpServlet {
             req.setAttribute("userInfo", logedinUser);
 
             // forward to home page
-            req.getRequestDispatcher("/WEB-INF/views/index.jsp").forward(req, resp);
+            req.getRequestDispatcher("/WEB-INF/views/loggedIn.jsp").forward(req, resp);
         }
     }
 }

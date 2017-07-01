@@ -7,5 +7,5 @@
 --%>
 <%@ page contentType="text/html;charset=UTF-8" language="java" %>
 <div id="bodyDiv">
-    <h1>Login succesfully!</h1>
+    <h1>Welcome ${logedinUser.userName}</h1>
 </div>

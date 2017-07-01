@@ -20,9 +20,11 @@ public class HomeController extends HttpServlet{
 
         UserAccount user = ServletUtil.getLogedinUser(req.getSession());
         if (user != null) {
+            String userName = ServletUtil.getUserNameInCookie(req);
+            req.setAttribute("userName", userName);
             req.getRequestDispatcher("/WEB-INF/views/index.jsp").forward(req, resp);
         } else {
-            String errorMessage = "No user logged in.";
+            String errorMessage = "Log in first to have further access.";
             req.getSession().setAttribute("errorMessage", errorMessage);
             req.getRequestDispatcher("/WEB-INF/views/login.jsp").forward(req, resp);
         }
