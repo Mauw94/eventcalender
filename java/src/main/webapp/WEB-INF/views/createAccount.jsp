@@ -7,13 +7,20 @@
 --%>
 <%@ page contentType="text/html;charset=UTF-8" language="java" %>
 <%@ taglib uri="http://java.sun.com/jsp/jstl/core" prefix="c" %>
-<div id="bodyDiv">
-    <h1>Create you account below: </h1>
+<div class="w3-content bodyDiv">
+    <h1>Create your account below</h1>
     <form method="get" action="doCreateAccount">
-        <input type="text" name="username" placeholder="username">
-        <input type="password" name="password" placeholder="password">
+        <div class="form-group">
+            <input class="form-control" type="text" name="username" placeholder="username">
+        </div>
+        <div class="form-group">
+            <input class="form-control" type="password" name="password" placeholder="password">
+        </div>
         <!--Retype password for confirmation -->
-        <input type="submit" value="Create" class="btn btn-default">
+        <div class="form-group">
+            <input type="submit" value="Create" class="btn btn-default">
+            <a href="/eventcalender/login" class="btn btn-default">Back to login</a>
+        </div>
     </form>
     <c:if test="${creationFailed}">
         ${accountError}

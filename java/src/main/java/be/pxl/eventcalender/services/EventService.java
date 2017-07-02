@@ -50,4 +50,16 @@ public class EventService {
         return eventList;
     }
 
+    public EventBean getEventById(int id) {
+        EventBean event = new EventBean();
+        try {
+            event = DAOUtil.getEventById(id);
+        } catch (SQLException e) {
+            e.printStackTrace();
+        } catch (ClassNotFoundException e) {
+            e.printStackTrace();
+        }
+        return event;
+    }
+
 }

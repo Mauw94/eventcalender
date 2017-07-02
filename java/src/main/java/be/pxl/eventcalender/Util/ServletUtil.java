@@ -16,6 +16,11 @@ public class ServletUtil {
         session.setAttribute("logedinUser", logedinUser);
     }
 
+    // Remove logedin user
+    public static void logoutUser(HttpSession session) {
+        session.removeAttribute("logedinUser");
+    }
+
     // Get the user information stored in the session
     public static UserAccount getLogedinUser(HttpSession session) {
         UserAccount userAccount = (UserAccount) (session.getAttribute("logedinUser"));

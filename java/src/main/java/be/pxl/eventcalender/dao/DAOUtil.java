@@ -3,10 +3,7 @@ package be.pxl.eventcalender.dao;
 import be.pxl.eventcalender.models.EventBean;
 import be.pxl.eventcalender.models.UserAccount;
 
-import java.sql.Connection;
-import java.sql.PreparedStatement;
-import java.sql.ResultSet;
-import java.sql.SQLException;
+import java.sql.*;
 import java.util.ArrayList;
 import java.util.Date;
 import java.util.List;
@@ -61,18 +58,48 @@ public class DAOUtil {
                     String subject = rs.getString(2);
                     String descr = rs.getString(3);
                     String note = rs.getString(4);
-                    Date dateTime = rs.getDate(5);
-
+                    Time time = rs.getTime(5);
+                    Date date = rs.getDate(6);
                     EventBean event = new EventBean();
                     event.setId(id);
                     event.setSubject(subject);
                     event.setDescription(descr);
                     event.setNote(note);
-                    event.setDateTime(dateTime);
+                    event.setDate(date);
+                    event.setTime(time);
 
                     eventBeanList.add(event);
                 }
                 return eventBeanList;
+            }
+        }
+    }
+
+    public static EventBean getEventById(int id) throws SQLException, ClassNotFoundException {
+        String sql = "SELECT * FROM event_table WHERE ID = ?";
+        try (Connection con = MySQLConnUtils.getMySQLConnection()) {
+            try (PreparedStatement stmt = con.prepareStatement(sql)) {
+                stmt.setInt(1, id);
+                ResultSet rs = stmt.executeQuery();
+                if (rs.next()) {
+                    EventBean event = new EventBean();
+                    int eventId = rs.getInt(1);
+                    String subject = rs.getString(2);
+                    String description = rs.getString(3);
+                    String note = rs.getString(4);
+                    Time time = rs.getTime(5);
+                    Date date = rs.getDate(6);
+
+                    event.setId(eventId);
+                    event.setSubject(subject);
+                    event.setDescription(description);
+                    event.setDate(date);
+                    event.setNote(note);
+                    event.setTime(time);
+                    return event;
+                } else {
+                    return null;
+                }
             }
         }
     }

@@ -6,6 +6,6 @@
   To change this template use File | Settings | File Templates.
 --%>
 <%@ page contentType="text/html;charset=UTF-8" language="java" %>
-<div id="bodyDiv">
+<div class="w3-content bodyDiv">
     <h1>Welcome ${logedinUser.userName}</h1>
 </div>

@@ -6,8 +6,9 @@ be\pxl\eventcalender\controllers\DoLoginController.class
 be\pxl\eventcalender\Util\ServletUtil.class
 be\pxl\eventcalender\models\UserAccount.class
 be\pxl\eventcalender\models\EventBean.class
+be\pxl\eventcalender\services\EventService.class
+be\pxl\eventcalender\controllers\EventsController.class
 be\pxl\eventcalender\controllers\LoginController.class
 be\pxl\eventcalender\dao\DAOUtil.class
-be\pxl\eventcalender\interfaces\EventService.class
-be\pxl\eventcalender\services\EventServiceImpl.class
 be\pxl\eventcalender\controllers\HomeController.class
+be\pxl\eventcalender\controllers\LogoutController.class

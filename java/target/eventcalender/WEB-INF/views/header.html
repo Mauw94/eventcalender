@@ -3,94 +3,20 @@
 <head>
     <meta charset="UTF-8">
     <title>Events Calender</title>
-    <script>
-        var OSName = "";
-        if (navigator.appVersion.indexOf("Win") != -1) OSName = "Windows";
-        if (navigator.appVersion.indexOf("Mac") != -1) OSName = "MacOS";
-        if (navigator.appVersion.indexOf("X11") != -1) OSName = "UNIX";
-        if (navigator.appVersion.indexOf("Linux") != -1) OSName = "Linux";
-        if (navigator.userAgent.indexOf("Android") != -1)
-            OSName = "Android";
-        if (navigator.userAgent.indexOf("iPhone") != -1 ||
-            navigator.userAgent.indexOf("iPod") != -1 ||
-            navigator.userAgent.indexOf("iPad") != -1)
-            OSName = "IOS"
-        $('body').addClass(OSName);
-    </script>
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="/WEB-INF/views/pageloadslideani.js"></script>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <style>
-        body {
-
-            margin: 0;
-            position: relative;
-            background-color: beige ;
-
-        }
-
-        #bodyDiv {
-            padding-top: 50px;
-        }
-
-        ul {
-            list-style-type: none;
-            margin: 0;
-            padding: 0;
-            overflow: hidden;
-            background-color: #333;
-            position: fixed;
-            top: 0;
-            width: 100%;
-        }
-
-        li {
-            float: left;
-        }
-
-        li a {
-            display: block;
-            color: white;
-            text-align: center;
-            padding: 14px 16px;
-            text-decoration: none;
-        }
-
-        li a:hover:not(.active) {
-            background-color: #111;
-        }
-
-        .active {
-            background-color: #4CAF50;
-        }
-
-        form {
-            margin: 10px;
-        }
-
-        form.form-row {
-            margin-top: 10px;
-        }
-
-        label {
-            display: block;
-            text-transform: capitalize;
-        }
-
-        input {
-            border: 1px solid #ddd;
-            padding: 2px 5px;
-            font-size: 1.2em;
-            border-radius: 5px;
-            box-shadow: inset 2px 2px 8px #ddd;
-        }
-
-
         #sticky {
             width: 100%;
             padding: 20px 20px 16px;
-            background: rgba(0, 0, 0, .25);
+            background: black;
             color: white;
-            font-weight: bold;
-            font-size: 18px;
+            font-size: 11px;
             text-align: center;
             position: fixed; /*Here's what sticks it*/
             bottom: 0; /*to the bottom of the body*/
@@ -101,34 +27,35 @@
         }
 
         #sticky:hover {
-            background: black;
+            background: rgba(0, 0, 0, .25);
         }
 
-        table {
-            border-collapse: collapse;
-            border-spacing: 0;
-            width: 100%;
-            border: 1px solid #ddd;
-            height: 500px;
+        a:hover {
+            text-decoration: none;
         }
 
-        th, td {
-            border: none;
-            text-align: left;
-            padding: 8px;
+        .bodyDiv {
+            width: 25%;
+            margin: 0 auto;
+            margin-top: 220px;
         }
 
-        tr:nth-child(even) {
-            background-color: #f2f2f2
+        .bodyDivTable {
+            width: 50%;
+            margin: 0 auto;
+            margin-top: 150px;
         }
     </style>
 </head>
 <body>
-<ul>
-    <li><a class="active" href="/eventcalender/login">Login</a></li>
-    <li><a href="/eventcalender/createAccount">Create Account</a></li>
-    <li><a href="/eventcalender/home">Home</a></li>
-</ul>
+<div class="w3-top">
+    <div class="w3-bar w3-black w3-card-2">
+        <a class="w3-bar-item w3-button w3-padding-large w3-hide-medium w3-hide-large w3-right"><i class="fa fa-bars"></i></a>
+        <a href="/eventcalender/login" class="w3-bar-item w3-button w3-padding-large">LOGIN</a>
+        <a href="/eventcalender/logout" class="w3-bar-item w3-button w3-padding-large w3-hide-small">LOGOUT</a>
+        <a href="/eventcalender/events" class="w3-bar-item w3-button w3-padding-large w3-hide-small">AGENDA</a>
+    </div>
+</div>
 
 
 

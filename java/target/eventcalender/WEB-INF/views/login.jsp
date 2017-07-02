@@ -7,12 +7,19 @@
 --%>
 <%@ page contentType="text/html;charset=UTF-8" language="java" %>
 <%@ taglib uri="http://java.sun.com/jsp/jstl/core" prefix="c" %>
-<div id="bodyDiv">
+<div class="w3-content bodyDiv">
     <h1>Please login below</h1>
     <form method="get" action="doLogin">
-        <input type="text" name="username">
-        <input type="password" name="password">
-        <input type="submit" name="submit" value="Login" class="btn btn-default">
+        <div class="form-group">
+            <input class="form-control" type="text" name="username" placeholder="username">
+        </div>
+        <div class="form-group">
+            <input class="form-control" type="password" name="password" placeholder="password">
+        </div>
+        <div class="form-group">
+            <input type="submit" name="submit" value="Login" class="btn btn-default">
+            <a href="/eventcalender/createAccount" class="btn btn-default">Create Account</a>
+        </div>
     </form>
     <c:if test="${empty logedinUser}">
         ${errorMessage}
