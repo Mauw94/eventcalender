@@ -31,7 +31,6 @@ public class UserInfoController extends HttpServlet {
             errorMessage = "False login information, please re-enter.";
             req.getSession().setAttribute("errorMessage", errorMessage);
         } else {
-
             // Store user in request attribute
             req.setAttribute("userInfo", logedinUser);
 

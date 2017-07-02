@@ -1,7 +1,7 @@
 package be.pxl.eventcalender.controllers;
 
 import be.pxl.eventcalender.Util.ServletUtil;
-import be.pxl.eventcalender.interfaces.EventService;
+import be.pxl.eventcalender.services.EventService;
 import be.pxl.eventcalender.models.UserAccount;
 
 import javax.servlet.ServletException;

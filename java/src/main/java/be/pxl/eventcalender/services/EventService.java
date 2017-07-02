@@ -1,4 +1,4 @@
-package be.pxl.eventcalender.interfaces;
+package be.pxl.eventcalender.services;
 
 import be.pxl.eventcalender.dao.DAOUtil;
 import be.pxl.eventcalender.models.EventBean;
