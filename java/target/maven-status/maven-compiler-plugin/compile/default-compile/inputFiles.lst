@@ -1,6 +1,7 @@
 C:\Users\Maurits\Documents\Git\eventcalender\java\src\main\java\be\pxl\eventcalender\controllers\LogoutController.java
 C:\Users\Maurits\Documents\Git\eventcalender\java\src\main\java\be\pxl\eventcalender\controllers\CreateAccountController.java
 C:\Users\Maurits\Documents\Git\eventcalender\java\src\main\java\be\pxl\eventcalender\Util\ServletUtil.java
+C:\Users\Maurits\Documents\Git\eventcalender\java\src\main\java\be\pxl\eventcalender\controllers\DoAddController.java
 C:\Users\Maurits\Documents\Git\eventcalender\java\src\main\java\be\pxl\eventcalender\services\EventService.java
 C:\Users\Maurits\Documents\Git\eventcalender\java\src\main\java\be\pxl\eventcalender\controllers\HomeController.java
 C:\Users\Maurits\Documents\Git\eventcalender\java\src\main\java\be\pxl\eventcalender\controllers\EventDetailsController.java
@@ -9,6 +10,7 @@ C:\Users\Maurits\Documents\Git\eventcalender\java\src\main\java\be\pxl\eventcale
 C:\Users\Maurits\Documents\Git\eventcalender\java\src\main\java\be\pxl\eventcalender\dao\MySQLConnUtils.java
 C:\Users\Maurits\Documents\Git\eventcalender\java\src\main\java\be\pxl\eventcalender\controllers\UserInfoController.java
 C:\Users\Maurits\Documents\Git\eventcalender\java\src\main\java\be\pxl\eventcalender\dao\DAOUtil.java
+C:\Users\Maurits\Documents\Git\eventcalender\java\src\main\java\be\pxl\eventcalender\controllers\AddController.java
 C:\Users\Maurits\Documents\Git\eventcalender\java\src\main\java\be\pxl\eventcalender\controllers\DoCreateAccountController.java
 C:\Users\Maurits\Documents\Git\eventcalender\java\src\main\java\be\pxl\eventcalender\controllers\LoginController.java
 C:\Users\Maurits\Documents\Git\eventcalender\java\src\main\java\be\pxl\eventcalender\controllers\DoLoginController.java

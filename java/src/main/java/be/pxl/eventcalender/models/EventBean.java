@@ -2,7 +2,6 @@ package be.pxl.eventcalender.models;
 
 import java.sql.Time;
 import java.util.Date;
-import java.util.Timer;
 
 /**
  * Created by Maurits on 29-6-2017.
@@ -13,10 +12,10 @@ public class EventBean {
     private String subject;
     private String description;
     private String note;
-    private Date date;
-    private Time time;
+    private String date;
+    private String time;
 
-    public EventBean(int id, String subject, String description, String note, Date date, Time time) {
+    public EventBean(int id, String subject, String description, String note, String date, String time) {
         Id = id;
         this.subject = subject;
         this.description = description;
@@ -59,19 +58,19 @@ public class EventBean {
         this.note = note;
     }
 
-    public Date getDate() {
+    public String getDate() {
         return date;
     }
 
-    public void setDate(Date date) {
+    public void setDate(String date) {
         this.date = date;
     }
 
-    public Date getTime() {
+    public String getTime() {
         return time;
     }
 
-    public void setTime(Time time) {
+    public void setTime(String time) {
         this.time = time;
     }
 }

@@ -62,4 +62,15 @@ public class EventService {
         return event;
     }
 
+    public boolean addEventItem(EventBean event) {
+        boolean added = false;
+        try {
+            added = DAOUtil.addEventItem(event);
+        } catch (SQLException e) {
+            e.printStackTrace();
+        } catch (ClassNotFoundException e) {
+            e.printStackTrace();
+        }
+        return added;
+    }
 }

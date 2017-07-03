@@ -47,6 +47,23 @@ public class DAOUtil {
         }
     }
 
+    public static boolean addEventItem(EventBean event) throws SQLException, ClassNotFoundException {
+        String sql = "INSERT INTO event_table(SUBJECT, DESCRIPTION, NOTE, TIME, DATE) VALUES(?,?,?,?,?)";
+        boolean added;
+        try (Connection con = MySQLConnUtils.getMySQLConnection()) {
+            try (PreparedStatement statement = con.prepareStatement(sql)) {
+                statement.setString(1, event.getSubject());
+                statement.setString(2, event.getDescription());
+                statement.setString(3, event.getNote());
+                statement.setString(4, event.getTime());
+                statement.setString(5, event.getDate());
+                added = statement.execute();
+                con.close();
+                return added;
+            }
+        }
+    }
+
     public static List<EventBean> getAllEvents() throws SQLException, ClassNotFoundException {
         List<EventBean> eventBeanList = new ArrayList<>();
         String sql = "SELECT * FROM event_table";
@@ -58,8 +75,8 @@ public class DAOUtil {
                     String subject = rs.getString(2);
                     String descr = rs.getString(3);
                     String note = rs.getString(4);
-                    Time time = rs.getTime(5);
-                    Date date = rs.getDate(6);
+                    String time = rs.getString(5);
+                    String date = rs.getString(6);
                     EventBean event = new EventBean();
                     event.setId(id);
                     event.setSubject(subject);
@@ -87,8 +104,8 @@ public class DAOUtil {
                     String subject = rs.getString(2);
                     String description = rs.getString(3);
                     String note = rs.getString(4);
-                    Time time = rs.getTime(5);
-                    Date date = rs.getDate(6);
+                    String time = rs.getString(5);
+                    String date = rs.getString(6);
 
                     event.setId(eventId);
                     event.setSubject(subject);

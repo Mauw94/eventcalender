@@ -4,17 +4,15 @@
     <h1>Welcome ${logedinUser.userName}</h1>
     <table class="table table-condensed table-responsive" id="hastoslide">
         <thead>
-        <tr>
-            <th>ID</th>
-            <th>Subject</th>
-            <th>Date</th>
-            <th>Details</th>
+        <tr class="active">
+            <th class="info">Subject</th>
+            <th class="info">Date</th>
+            <th class="info">Details</th>
         </tr>
         </thead>
         <tbody>
         <c:forEach items="${eventList}" var="event" >
             <tr>
-                <td>${event.id}</td>
                 <td>${event.subject}</td>
                 <td>${event.date}</td>
                 <td>
