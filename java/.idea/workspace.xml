@@ -43,8 +43,8 @@
       <file leaf-file-name="DAOUtil.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/be/pxl/eventcalender/dao/DAOUtil.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="388">
-              <caret line="109" column="41" lean-forward="true" selection-start-line="109" selection-start-column="41" selection-end-line="109" selection-end-column="41" />
+            <state relative-caret-position="367">
+              <caret line="81" column="46" lean-forward="true" selection-start-line="81" selection-start-column="46" selection-end-line="81" selection-end-column="46" />
               <folding>
                 <marker date="1499077967620" expanded="true" signature="433:488" ph="SELECT * FRO... users" />
                 <marker date="1499077967620" expanded="true" signature="1237:1286" ph="INSERT INTO users... " />
@@ -88,6 +88,18 @@
           </provider>
         </entry>
       </file>
+      <file leaf-file-name="EventDetailsController.java" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/main/java/be/pxl/eventcalender/controllers/EventDetailsController.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="504">
+              <caret line="45" column="41" lean-forward="false" selection-start-line="45" selection-start-column="41" selection-end-line="45" selection-end-column="41" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
       <file leaf-file-name="addItem.jsp" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/views/addItem.jsp">
           <provider selected="true" editor-type-id="text-editor">
@@ -98,11 +110,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="DoAddController.java" pinned="false" current-in-tab="true">
+      <file leaf-file-name="DoAddController.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/be/pxl/eventcalender/controllers/DoAddController.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="353">
-              <caret line="32" column="42" lean-forward="true" selection-start-line="32" selection-start-column="42" selection-end-line="32" selection-end-column="42" />
+            <state relative-caret-position="815">
+              <caret line="42" column="0" lean-forward="true" selection-start-line="42" selection-start-column="0" selection-end-line="42" selection-end-column="0" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -170,7 +182,6 @@
         <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/script/pageloadslideani.js" />
         <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/loggedIn.jsp" />
         <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/accountCreatedSuccess.jsp" />
-        <option value="$PROJECT_DIR$/src/main/java/be/pxl/eventcalender/controllers/EventDetailsController.java" />
         <option value="$PROJECT_DIR$/src/main/java/be/pxl/eventcalender/controllers/UserInfoController.java" />
         <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/login.jsp" />
         <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/test.jsp" />
@@ -184,6 +195,7 @@
         <option value="$PROJECT_DIR$/src/main/java/be/pxl/eventcalender/models/EventBean.java" />
         <option value="$PROJECT_DIR$/src/main/java/be/pxl/eventcalender/dao/DAOUtil.java" />
         <option value="$PROJECT_DIR$/src/main/java/be/pxl/eventcalender/controllers/DoAddController.java" />
+        <option value="$PROJECT_DIR$/src/main/java/be/pxl/eventcalender/controllers/EventDetailsController.java" />
       </list>
     </option>
   </component>
@@ -973,15 +985,15 @@
       <workItem from="1498748639845" duration="9000" />
       <workItem from="1498748691063" duration="33787000" />
       <workItem from="1499066908470" duration="42000" />
-      <workItem from="1499067025529" duration="8774000" />
+      <workItem from="1499067025529" duration="12981000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="43814000" />
+    <option name="totallyTimeSpent" value="48021000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-9" y="-9" width="1938" height="1048" extended-state="6" />
+    <frame x="-9" y="-9" width="1938" height="1048" extended-state="7" />
     <editor active="true" />
     <layout>
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
@@ -1318,16 +1330,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/be/pxl/eventcalender/controllers/EventDetailsController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-49">
-          <caret line="14" column="3" lean-forward="true" selection-start-line="14" selection-start-column="3" selection-end-line="14" selection-end-column="3" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/views/login.jsp">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="315">
@@ -1403,6 +1405,26 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/be/pxl/eventcalender/controllers/EventsController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="514">
+          <caret line="32" column="53" lean-forward="true" selection-start-line="32" selection-start-column="53" selection-end-line="32" selection-end-column="53" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/be/pxl/eventcalender/controllers/DoAddController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="815">
+          <caret line="42" column="0" lean-forward="true" selection-start-line="42" selection-start-column="0" selection-end-line="42" selection-end-column="0" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/be/pxl/eventcalender/services/EventService.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="539">
@@ -1421,8 +1443,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/be/pxl/eventcalender/dao/DAOUtil.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="388">
-          <caret line="109" column="41" lean-forward="true" selection-start-line="109" selection-start-column="41" selection-end-line="109" selection-end-column="41" />
+        <state relative-caret-position="367">
+          <caret line="81" column="46" lean-forward="true" selection-start-line="81" selection-start-column="46" selection-end-line="81" selection-end-column="46" />
           <folding>
             <marker date="1499077967620" expanded="true" signature="433:488" ph="SELECT * FRO... users" />
             <marker date="1499077967620" expanded="true" signature="1237:1286" ph="INSERT INTO users... " />
@@ -1433,20 +1455,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/be/pxl/eventcalender/controllers/EventsController.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/be/pxl/eventcalender/controllers/EventDetailsController.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="514">
-          <caret line="32" column="53" lean-forward="true" selection-start-line="32" selection-start-column="53" selection-end-line="32" selection-end-column="53" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/be/pxl/eventcalender/controllers/DoAddController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="353">
-          <caret line="32" column="42" lean-forward="true" selection-start-line="32" selection-start-column="42" selection-end-line="32" selection-end-column="42" />
+        <state relative-caret-position="504">
+          <caret line="45" column="41" lean-forward="false" selection-start-line="45" selection-start-column="41" selection-end-line="45" selection-end-column="41" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>

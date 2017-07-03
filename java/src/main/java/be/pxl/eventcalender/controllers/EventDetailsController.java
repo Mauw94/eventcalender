@@ -1,6 +1,8 @@
 package be.pxl.eventcalender.controllers;
 
+import be.pxl.eventcalender.Util.ServletUtil;
 import be.pxl.eventcalender.models.EventBean;
+import be.pxl.eventcalender.models.UserAccount;
 import be.pxl.eventcalender.services.EventService;
 
 import javax.servlet.ServletException;
@@ -20,22 +22,30 @@ public class EventDetailsController extends HttpServlet {
 
     @Override
     protected void doGet(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
-        int id = Integer.parseInt(req.getParameter("id"));
+
+        UserAccount user = ServletUtil.getLogedinUser(req.getSession());
         String errorMessage = null;
-        if (id > 0) {
-            EventBean event = service.getEventById(id);
-            if (event != null) {
-                req.setAttribute("event", event);
-                req.getRequestDispatcher("/WEB-INF/views/eventDetails.jsp").forward(req, resp);
-            } else { // elseif event is null
-                errorMessage = "No event found.";
+        if (user != null) {
+            int id = Integer.parseInt(req.getParameter("id"));
+            if (id > 0) {
+                EventBean event = service.getEventById(id);
+                if (event != null) {
+                    req.setAttribute("event", event);
+                    req.getRequestDispatcher("/WEB-INF/views/eventDetails.jsp").forward(req, resp);
+                } else { // elseif event is null
+                    errorMessage = "No event found.";
+                    req.getSession().setAttribute("eventError", errorMessage);
+                    resp.sendRedirect("events");
+                }
+            } else {   // elseif id is null
+                errorMessage = "No id given.";
                 req.getSession().setAttribute("eventError", errorMessage);
                 resp.sendRedirect("events");
             }
-        } else {   // elseif id is null
-            errorMessage = "No id given.";
-            req.getSession().setAttribute("eventError", errorMessage);
-            resp.sendRedirect("events");
+        } else {
+            errorMessage = "Login to have further access.";
+            req.getSession().setAttribute("errorMessage", errorMessage);
+            resp.sendRedirect("login");
         }
     }
 }
