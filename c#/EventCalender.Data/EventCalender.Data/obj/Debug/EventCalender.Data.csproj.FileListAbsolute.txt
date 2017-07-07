@@ -1,0 +1,1 @@
+C:\Users\Mauwi\Documents\Git\eventcalender\c#\EventCalender.Data\EventCalender.Data\obj\Debug\EventCalender.Data.csprojResolveAssemblyReference.cache
