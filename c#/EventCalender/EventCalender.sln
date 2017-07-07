@@ -7,6 +7,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "EventCalender", "EventCalen
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "EventCalender.Data", "..\EventCalender.Data\EventCalender.Data\EventCalender.Data.csproj", "{0AF94261-19D4-4362-95FF-5AC60BD5D29B}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "EventCalender.Test", "Tests\EventCalender.Test\EventCalender.Test.csproj", "{BF7EE5AA-69EB-4C1C-A301-8C65E8DF0058}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -21,6 +23,10 @@ Global
 		{0AF94261-19D4-4362-95FF-5AC60BD5D29B}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{0AF94261-19D4-4362-95FF-5AC60BD5D29B}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{0AF94261-19D4-4362-95FF-5AC60BD5D29B}.Release|Any CPU.Build.0 = Release|Any CPU
+		{BF7EE5AA-69EB-4C1C-A301-8C65E8DF0058}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{BF7EE5AA-69EB-4C1C-A301-8C65E8DF0058}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{BF7EE5AA-69EB-4C1C-A301-8C65E8DF0058}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{BF7EE5AA-69EB-4C1C-A301-8C65E8DF0058}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

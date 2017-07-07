@@ -1,9 +1,11 @@
 ﻿using System.Data.Entity;
 using EventCalender.Data.DomainClasses;
+using EventCalender.Data.migrations;
+using Microsoft.AspNet.Identity.EntityFramework;
 
 namespace EventCalender.Data
 {
-    public class EventCalenderContext : DbContext
+    public class EventCalenderContext : IdentityDbContext<ApplicationUser>
     {
         public EventCalenderContext() : base("EventCalender")
         {
@@ -11,13 +13,13 @@ namespace EventCalender.Data
         }
         
         public DbSet<Event> Events { get; set; }
-        public DbSet<User> users { get; set; }
+        public DbSet<User> Users { get; set; }
 
         public static EventCalenderContext Create()
         {
             return new EventCalenderContext();
         }
-
+        
         public static void SetInitializer()
         {
             Database.SetInitializer(new MigrateDatabaseToLatestVersion<EventCalenderContext, Configuration>());

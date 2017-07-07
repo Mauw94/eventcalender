@@ -1,1 +1,14 @@
 C:\Users\Mauwi\Documents\Git\eventcalender\c#\EventCalender.Data\EventCalender.Data\obj\Debug\EventCalender.Data.csprojResolveAssemblyReference.cache
+C:\Users\Mauwi\Documents\Git\eventcalender\c#\EventCalender.Data\EventCalender.Data\bin\Debug\EventCalender.Data.dll.config
+C:\Users\Mauwi\Documents\Git\eventcalender\c#\EventCalender.Data\EventCalender.Data\bin\Debug\EventCalender.Data.dll
+C:\Users\Mauwi\Documents\Git\eventcalender\c#\EventCalender.Data\EventCalender.Data\bin\Debug\EventCalender.Data.pdb
+C:\Users\Mauwi\Documents\Git\eventcalender\c#\EventCalender.Data\EventCalender.Data\bin\Debug\EntityFramework.dll
+C:\Users\Mauwi\Documents\Git\eventcalender\c#\EventCalender.Data\EventCalender.Data\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\Mauwi\Documents\Git\eventcalender\c#\EventCalender.Data\EventCalender.Data\bin\Debug\EntityFramework.xml
+C:\Users\Mauwi\Documents\Git\eventcalender\c#\EventCalender.Data\EventCalender.Data\bin\Debug\EntityFramework.SqlServer.xml
+C:\Users\Mauwi\Documents\Git\eventcalender\c#\EventCalender.Data\EventCalender.Data\obj\Debug\EventCalender.Data.dll
+C:\Users\Mauwi\Documents\Git\eventcalender\c#\EventCalender.Data\EventCalender.Data\obj\Debug\EventCalender.Data.pdb
+C:\Users\Mauwi\Documents\Git\eventcalender\c#\EventCalender.Data\EventCalender.Data\bin\Debug\Microsoft.AspNet.Identity.Core.dll
+C:\Users\Mauwi\Documents\Git\eventcalender\c#\EventCalender.Data\EventCalender.Data\bin\Debug\Microsoft.AspNet.Identity.EntityFramework.dll
+C:\Users\Mauwi\Documents\Git\eventcalender\c#\EventCalender.Data\EventCalender.Data\bin\Debug\Microsoft.AspNet.Identity.Core.xml
+C:\Users\Mauwi\Documents\Git\eventcalender\c#\EventCalender.Data\EventCalender.Data\bin\Debug\Microsoft.AspNet.Identity.EntityFramework.xml

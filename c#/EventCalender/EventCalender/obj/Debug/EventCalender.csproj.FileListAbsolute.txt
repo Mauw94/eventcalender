@@ -24,3 +24,9 @@ C:\Users\Mauwi\Documents\Git\eventcalender\c#\EventCalender\EventCalender\bin\Sy
 C:\Users\Mauwi\Documents\Git\eventcalender\c#\EventCalender\EventCalender\obj\Debug\EventCalender.csprojResolveAssemblyReference.cache
 C:\Users\Mauwi\Documents\Git\eventcalender\c#\EventCalender\EventCalender\obj\Debug\EventCalender.dll
 C:\Users\Mauwi\Documents\Git\eventcalender\c#\EventCalender\EventCalender\obj\Debug\EventCalender.pdb
+C:\Users\Mauwi\Documents\Git\eventcalender\c#\EventCalender\EventCalender\bin\EventCalender.Data.dll
+C:\Users\Mauwi\Documents\Git\eventcalender\c#\EventCalender\EventCalender\bin\SimpleInjector.dll
+C:\Users\Mauwi\Documents\Git\eventcalender\c#\EventCalender\EventCalender\bin\EntityFramework.dll
+C:\Users\Mauwi\Documents\Git\eventcalender\c#\EventCalender\EventCalender\bin\EventCalender.Data.pdb
+C:\Users\Mauwi\Documents\Git\eventcalender\c#\EventCalender\EventCalender\bin\SimpleInjector.xml
+C:\Users\Mauwi\Documents\Git\eventcalender\c#\EventCalender\EventCalender\bin\EntityFramework.xml
