@@ -34,9 +34,6 @@ public class DoLoginController extends HttpServlet {
         String errorMessage = null;
         UserAccount user;
 
-        /* TODO if user has logged in, you can not log in anymore
-         * TODO only log out before u can log in again */
-
         if (userName != null && password != null && userName.length() > 0 && password.length() > 0) {
             user = service.findUser(userName, password);
             req.getSession().setAttribute("logedinUser", user);

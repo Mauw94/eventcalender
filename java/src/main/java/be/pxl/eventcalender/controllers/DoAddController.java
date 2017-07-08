@@ -32,14 +32,19 @@ public class DoAddController extends HttpServlet {
         String note = req.getParameter("note");
         EventBean event = new EventBean();
 
-        event.setSubject(subject);
-        event.setDescription(description);
-        event.setNote(note);
-        event.setDate(date);
-        event.setTime(time);
+        if (description.length() > 0 && description != null && subject.length() > 0 && subject != null) {
+            event.setSubject(subject);
+            event.setDescription(description);
+            event.setNote(note);
+            event.setDate(date);
+            event.setTime(time);
 
-        service.addEventItem(event);
-        resp.sendRedirect("events");
-
+            service.addEventItem(event);
+            resp.sendRedirect("events");
+        } else {
+            String errorMessage = "Please fill in the required fields";
+            req.setAttribute("addError", errorMessage);
+            req.getRequestDispatcher("/WEB-INF/views/addItem").forward(req, resp);
+        }
     }
 }

@@ -3,6 +3,7 @@ package be.pxl.eventcalender.dao;
 import be.pxl.eventcalender.models.EventBean;
 import be.pxl.eventcalender.models.UserAccount;
 
+import java.awt.*;
 import java.sql.*;
 import java.util.ArrayList;
 import java.util.Date;
@@ -43,6 +44,23 @@ public class DAOUtil {
                 updated = statement.execute();
                 con.close();
                 return updated;
+            }
+        }
+    }
+
+    public static void updateEvent(EventBean event, int id) throws SQLException, ClassNotFoundException {
+        String sql = "UPDATE event_table SET SUBJECT = ?, DESCRIPTION = ?, NOTE = ?, DATE = ?, TIME = ? WHERE ID = ?";
+        try (Connection con = MySQLConnUtils.getMySQLConnection()) {
+            try (PreparedStatement statement = con.prepareStatement(sql)) {
+                statement.setString(1, event.getSubject());
+                statement.setString(2, event.getDescription());
+                statement.setString(3, event.getNote());
+                statement.setString(4, event.getDate());
+                statement.setString(5, event.getTime());
+                statement.setInt(6, id);
+                statement.executeUpdate();
+                statement.close();
+                con.close();
             }
         }
     }

@@ -1,10 +1,10 @@
 <component name="ArtifactManager">
-  <artifact type="exploded-war" name="eventcalender:war exploded">
+  <artifact type="exploded-war" name="java:war exploded">
     <output-path>$PROJECT_DIR$/target/eventcalender</output-path>
     <root id="root">
       <element id="directory" name="WEB-INF">
         <element id="directory" name="classes">
-          <element id="module-output" name="eventcalender" />
+          <element id="module-output" name="java" />
         </element>
         <element id="directory" name="lib">
           <element id="library" level="project" name="Maven: mysql:mysql-connector-java:5.1.39" />
@@ -14,7 +14,7 @@
       <element id="directory" name="META-INF">
         <element id="file-copy" path="$PROJECT_DIR$/target/eventcalender/META-INF/MANIFEST.MF" />
       </element>
-      <element id="javaee-facet-resources" facet="eventcalender/web/Web" />
+      <element id="javaee-facet-resources" facet="java/web/Web" />
     </root>
   </artifact>
 </component>

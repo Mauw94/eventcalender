@@ -1,4 +1,5 @@
 be\pxl\eventcalender\controllers\DoCreateAccountController.class
+be\pxl\eventcalender\controllers\DoEditController.class
 be\pxl\eventcalender\controllers\CreateAccountController.class
 be\pxl\eventcalender\controllers\EventDetailsController.class
 be\pxl\eventcalender\dao\MySQLConnUtils.class
@@ -13,5 +14,6 @@ be\pxl\eventcalender\services\EventService.class
 be\pxl\eventcalender\controllers\EventsController.class
 be\pxl\eventcalender\controllers\LoginController.class
 be\pxl\eventcalender\dao\DAOUtil.class
+be\pxl\eventcalender\controllers\EditController.class
 be\pxl\eventcalender\controllers\HomeController.class
 be\pxl\eventcalender\controllers\LogoutController.class

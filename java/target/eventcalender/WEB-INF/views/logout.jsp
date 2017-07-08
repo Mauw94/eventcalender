@@ -7,6 +7,7 @@
 --%>
 <%@ page contentType="text/html;charset=UTF-8" language="java" %>
 <meta http-equiv="refresh" content="3;/eventcalender/home" />
-<div class="w3-content bodyDiv">
+<div class="logout">
     <h1>Logging off.. </h1>
+    <p>Returning to login page</p>
 </div>

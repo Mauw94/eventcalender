@@ -8,19 +8,14 @@ import java.sql.SQLException;
 import java.util.ArrayList;
 import java.util.List;
 
-/**
- * Created by Maurits on 29-6-2017.
- */
 public class EventService {
 
     public UserAccount findUser(String userName, String password) {
         UserAccount user = new UserAccount();
         try {
             user = DAOUtil.findUser(userName, password);
-        } catch (SQLException e) {
+        } catch (SQLException | ClassNotFoundException e) {
             e.printStackTrace();
-        } catch (ClassNotFoundException c) {
-            c.printStackTrace();
         }
         return user;
     }
@@ -29,12 +24,18 @@ public class EventService {
         boolean updated = false;
         try {
             updated = DAOUtil.insertUser(user);
-        } catch (SQLException e) {
-            e.printStackTrace();
-        } catch (ClassNotFoundException e) {
+        } catch (SQLException | ClassNotFoundException e) {
             e.printStackTrace();
         }
         return updated;
+    }
+
+    public void updateEvent(EventBean event, int id) {
+        try {
+            DAOUtil.updateEvent(event, id);
+        } catch (SQLException | ClassNotFoundException e) {
+            e.printStackTrace();
+        }
     }
 
     public List<EventBean> getAllEvents()
@@ -42,10 +43,8 @@ public class EventService {
         List<EventBean> eventList = new ArrayList<>();
         try {
             eventList = DAOUtil.getAllEvents();
-        } catch (SQLException e) {
+        } catch (SQLException | ClassNotFoundException e) {
             e.printStackTrace();
-        } catch (ClassNotFoundException c) {
-            c.printStackTrace();
         }
         return eventList;
     }
@@ -54,9 +53,7 @@ public class EventService {
         EventBean event = new EventBean();
         try {
             event = DAOUtil.getEventById(id);
-        } catch (SQLException e) {
-            e.printStackTrace();
-        } catch (ClassNotFoundException e) {
+        } catch (SQLException | ClassNotFoundException e) {
             e.printStackTrace();
         }
         return event;
@@ -66,9 +63,7 @@ public class EventService {
         boolean added = false;
         try {
             added = DAOUtil.addEventItem(event);
-        } catch (SQLException e) {
-            e.printStackTrace();
-        } catch (ClassNotFoundException e) {
+        } catch (SQLException | ClassNotFoundException e) {
             e.printStackTrace();
         }
         return added;

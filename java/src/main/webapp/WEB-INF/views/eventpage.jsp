@@ -22,5 +22,5 @@
         </c:forEach>
         </tbody>
     </table>
-    <p>${eventError}</p>
+    <a href="/eventcalender/add" class="btn btn-info btn-sm">Add new item</a>
 </div>

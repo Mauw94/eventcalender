@@ -1,5 +1,6 @@
 C:\Users\Mauwi\Documents\Git\eventcalender\java\src\main\java\be\pxl\eventcalender\controllers\HomeController.java
 C:\Users\Mauwi\Documents\Git\eventcalender\java\src\main\java\be\pxl\eventcalender\controllers\DoLoginController.java
+C:\Users\Mauwi\Documents\Git\eventcalender\java\src\main\java\be\pxl\eventcalender\controllers\DoEditController.java
 C:\Users\Mauwi\Documents\Git\eventcalender\java\src\main\java\be\pxl\eventcalender\controllers\EventsController.java
 C:\Users\Mauwi\Documents\Git\eventcalender\java\src\main\java\be\pxl\eventcalender\models\EventBean.java
 C:\Users\Mauwi\Documents\Git\eventcalender\java\src\main\java\be\pxl\eventcalender\controllers\CreateAccountController.java
@@ -10,6 +11,7 @@ C:\Users\Mauwi\Documents\Git\eventcalender\java\src\main\java\be\pxl\eventcalend
 C:\Users\Mauwi\Documents\Git\eventcalender\java\src\main\java\be\pxl\eventcalender\Util\ServletUtil.java
 C:\Users\Mauwi\Documents\Git\eventcalender\java\src\main\java\be\pxl\eventcalender\services\EventService.java
 C:\Users\Mauwi\Documents\Git\eventcalender\java\src\main\java\be\pxl\eventcalender\controllers\AddController.java
+C:\Users\Mauwi\Documents\Git\eventcalender\java\src\main\java\be\pxl\eventcalender\controllers\EditController.java
 C:\Users\Mauwi\Documents\Git\eventcalender\java\src\main\java\be\pxl\eventcalender\controllers\LogoutController.java
 C:\Users\Mauwi\Documents\Git\eventcalender\java\src\main\java\be\pxl\eventcalender\controllers\UserInfoController.java
 C:\Users\Mauwi\Documents\Git\eventcalender\java\src\main\java\be\pxl\eventcalender\controllers\LoginController.java

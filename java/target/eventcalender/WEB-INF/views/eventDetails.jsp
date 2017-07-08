@@ -22,7 +22,6 @@
         </tbody>
     </table>
     <a href="/eventcalender/events" class="btn btn-default btn-md">Back</a>
-    <a href="/eventcalender/add" class="btn btn-default btn-md">Add</a>
-    <a href="/eventcalender/edit" class="btn btn-default btn-md">Edit</a>
-    <p>${eventError}</p>
+    <a href="/eventcalender/edit?id=${event.id}" class="btn btn-info btn-md">Edit</a>
+    <a href="/eventcalender/delete" class="btn btn-danger btn-md">Delete</a>
 </div>

@@ -1,14 +1,14 @@
 <%@ page contentType="text/html;charset=UTF-8" language="java" %>
 <div class="w3-content bodyDivAdd">
-    <h1>New Agenda Item</h1>
+    <h1>Add new item</h1>
     <form method="get" action="/eventcalender/doAdd">
         <div class="form-group">
             <label class="label label-info">Subject</label>
-            <input type="text" class="form-control" name="subject">
+            <input type="text" class="form-control" name="subject" required>
         </div>
         <div class="form-group">
             <label class="label label-info">Description</label>
-            <input type="text" class="form-control" name="description">
+            <input type="text" class="form-control" name="description" required>
         </div>
         <div class="form-group">
             <label class="label label-info">Date</label>
@@ -23,8 +23,8 @@
             <input type="text" class="form-control" name="note" placeholder="optional">
         </div>
         <div class="form-group">
-            <input type="submit" class="btn btn-default btn-md" value="Add">
             <a href="/eventcalender/events" class="btn btn-default btn-md">Back</a>
+            <input type="submit" class="btn btn-info btn-md" value="Add">
         </div>
     </form>
 </div>
