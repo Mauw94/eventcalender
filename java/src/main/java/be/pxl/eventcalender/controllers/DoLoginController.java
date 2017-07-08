@@ -14,17 +14,8 @@ import java.io.IOException;
 @WebServlet("/doLogin")
 public class DoLoginController extends HttpServlet {
     private EventService service = new EventService();
-
     @Override
     protected void doGet(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
-
-        // get parameters from the view
-        // check if password and username are not null
-        // check if the user exists in the database
-        // create a new useraccount
-        // add useracc to session
-        // redirect to userinfo to double check user
-        // after check in userinfo redirect to homepage
 
         String password = req.getParameter("password");
         String userName = req.getParameter("username");
