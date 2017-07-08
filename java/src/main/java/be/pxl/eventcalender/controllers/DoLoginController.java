@@ -11,9 +11,6 @@ import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 import java.io.IOException;
 
-/**
- * Created by Maurits on 29-6-2017.
- */
 @WebServlet("/doLogin")
 public class DoLoginController extends HttpServlet {
     private EventService service = new EventService();

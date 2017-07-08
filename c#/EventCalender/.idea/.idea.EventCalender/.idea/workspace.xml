@@ -46,12 +46,18 @@
   <component name="FavoritesManager">
     <favorites_list name="EventCalender" />
   </component>
+  <component name="FileColors">
+    <fileColor scope="Non-Project Files (Material Default)" color="2E3C43" />
+    <fileColor scope="Non-Project Files (Material Darker)" color="323232" />
+    <fileColor scope="Non-Project Files (Material Lighter)" color="eae8e8" />
+    <fileColor scope="Non-Project Files (Material Palenight)" color="2f2e43" />
+  </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file leaf-file-name="EventCalenderContext.cs" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/../EventCalender.Data/EventCalender.Data/EventCalenderContext.cs">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="432">
+            <state relative-caret-position="0">
               <caret line="24" column="99" lean-forward="false" selection-start-line="24" selection-start-column="99" selection-end-line="24" selection-end-column="99" />
               <folding>
                 <marker date="1499432637577" expanded="true" signature="6:151" ph="..." />
@@ -67,7 +73,7 @@
       <file leaf-file-name="Global.asax.cs" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/EventCalender/Global.asax.cs">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="270">
+            <state relative-caret-position="0">
               <caret line="15" column="58" lean-forward="false" selection-start-line="15" selection-start-column="58" selection-end-line="15" selection-end-column="58" />
               <folding>
                 <marker date="1499432325106" expanded="true" signature="6:114" ph="..." />
@@ -78,28 +84,14 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="IocConfig.cs" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/EventCalender/App_Start/IocConfig.cs">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="450">
-              <caret line="25" column="34" lean-forward="false" selection-start-line="25" selection-start-column="34" selection-end-line="25" selection-end-column="34" />
-              <folding>
-                <marker date="1499432276208" expanded="true" signature="6:189" ph="..." />
-                <marker date="1499432276208" expanded="true" signature="243:1069" ph="{...}" />
-                <marker date="1499432276208" expanded="true" signature="301:360" ph="{...}" />
-                <marker date="1499432276208" expanded="true" signature="415:1054" ph="{...}" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file leaf-file-name="EventDbRepository.cs" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/../EventCalender.Data/EventCalender.Data/EventDbRepository.cs">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="342">
-              <caret line="19" column="39" lean-forward="false" selection-start-line="19" selection-start-column="39" selection-end-line="19" selection-end-column="39" />
+            <state relative-caret-position="184">
+              <caret line="9" column="29" lean-forward="false" selection-start-line="9" selection-start-column="29" selection-end-line="9" selection-end-column="29" />
               <folding>
-                <marker date="1499432319970" expanded="true" signature="6:73" ph="..." />
+                <marker date="1499432319970" expanded="false" signature="6:73" ph="..." />
+                <marker date="1499432319970" expanded="true" signature="103:743" ph="{...}" />
                 <marker date="1499432319970" expanded="true" signature="159:741" ph="{...}" />
                 <marker date="1499432319970" expanded="true" signature="208:284" ph="{...}" />
                 <marker date="1499432319970" expanded="true" signature="322:398" ph="{...}" />
@@ -115,9 +107,10 @@
         <entry file="file://$PROJECT_DIR$/../EventCalender.Data/EventCalender.Data/UserDbRepository.cs">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="162">
-              <caret line="9" column="55" lean-forward="false" selection-start-line="9" selection-start-column="12" selection-end-line="9" selection-end-column="55" />
+              <caret line="9" column="29" lean-forward="false" selection-start-line="9" selection-start-column="29" selection-end-line="9" selection-end-column="29" />
               <folding>
-                <marker date="1499432319994" expanded="true" signature="6:73" ph="..." />
+                <marker date="1499432319994" expanded="false" signature="6:73" ph="..." />
+                <marker date="1499432319994" expanded="true" signature="103:741" ph="{...}" />
                 <marker date="1499432319994" expanded="true" signature="157:739" ph="{...}" />
                 <marker date="1499432319994" expanded="true" signature="205:281" ph="{...}" />
                 <marker date="1499432319994" expanded="true" signature="318:394" ph="{...}" />
@@ -132,11 +125,10 @@
       <file leaf-file-name="HomeController.cs" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/EventCalender/Controllers/HomeController.cs">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="324">
-              <caret line="23" column="37" lean-forward="true" selection-start-line="23" selection-start-column="37" selection-end-line="23" selection-end-column="37" />
+            <state relative-caret-position="0">
+              <caret line="23" column="37" lean-forward="false" selection-start-line="23" selection-start-column="37" selection-end-line="23" selection-end-column="37" />
               <folding>
                 <marker date="1499427899409" expanded="false" signature="6:133" ph="..." />
-                <marker date="1499427899409" expanded="true" signature="170:606" ph="{...}" />
                 <marker date="1499427899409" expanded="true" signature="217:604" ph="{...}" />
                 <marker date="1499427899409" expanded="true" signature="259:306" ph="{...}" />
                 <marker date="1499427899409" expanded="true" signature="343:459" ph="{...}" />
@@ -149,7 +141,7 @@
       <file leaf-file-name="EventController.cs" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/EventCalender/Controllers/EventController.cs">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="578">
+            <state relative-caret-position="833">
               <caret line="62" column="40" lean-forward="false" selection-start-line="62" selection-start-column="40" selection-end-line="62" selection-end-column="40" />
               <folding>
                 <marker date="1499430689256" expanded="false" signature="6:128" ph="..." />
@@ -172,8 +164,8 @@
       <file leaf-file-name="EventsControllerTests.cs" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/Tests/EventCalender.Test/controllers/EventsControllerTests.cs">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="324">
-              <caret line="30" column="27" lean-forward="false" selection-start-line="30" selection-start-column="27" selection-end-line="30" selection-end-column="27" />
+            <state relative-caret-position="-345">
+              <caret line="22" column="0" lean-forward="true" selection-start-line="22" selection-start-column="0" selection-end-line="22" selection-end-column="0" />
               <folding>
                 <marker date="1499431475783" expanded="false" signature="6:211" ph="..." />
                 <marker date="1499431475783" expanded="true" signature="253:1790" ph="{...}" />
@@ -192,7 +184,7 @@
       <file leaf-file-name="Configuration.cs" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/../EventCalender.Data/EventCalender.Data/migrations/Configuration.cs">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="450">
+            <state relative-caret-position="0">
               <caret line="25" column="0" lean-forward="false" selection-start-line="25" selection-start-column="0" selection-end-line="25" selection-end-column="0" />
               <folding>
                 <marker date="1499432399339" expanded="true" signature="6:76" ph="..." />
@@ -241,10 +233,10 @@
     <sorting>DEFINITION_ORDER</sorting>
   </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="86" />
-    <option name="y" value="23" />
-    <option name="width" value="1768" />
-    <option name="height" value="1000" />
+    <option name="x" value="-8" />
+    <option name="y" value="-8" />
+    <option name="width" value="1936" />
+    <option name="height" value="1056" />
   </component>
   <component name="ProjectView">
     <navigator currentView="SolutionExplorer" proportions="" version="1">
@@ -346,7 +338,7 @@
   </component>
   <component name="PropertiesComponent">
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="settings.editor.selected.configurable" value="reference.settingsdialog.IDE.editor.colors.Font" />
+    <property name="settings.editor.selected.configurable" value="reference.settingsdialog.IDE.editor.colors" />
     <property name="RiderNuGetCacheManager.AutoClear.http-cache" value="2" />
     <property name="RiderNuGetCacheManager.AutoClear.packages-cache" value="2" />
     <property name="RiderNuGetCacheManager.AutoClear.global-packages" value="2" />
@@ -438,6 +430,8 @@
       <envs />
       <method />
     </configuration>
+    <configuration />
+    <configuration />
     <list size="1">
       <item index="0" class="java.lang.String" itemvalue=".NET Project.Default" />
     </list>
@@ -455,13 +449,15 @@
       <updated>1499427883027</updated>
       <workItem from="1499427884235" duration="4887000" />
       <workItem from="1499439629301" duration="624000" />
+      <workItem from="1499527214561" duration="114000" />
+      <workItem from="1499527342447" duration="170000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="5511000" />
+    <option name="totallyTimeSpent" value="5795000" />
   </component>
-  <component name="TodoView">
+  <component name="TodoView" selected-index="2">
     <todo-panel id="selected-file">
       <is-autoscroll-to-source value="true" />
     </todo-panel>
@@ -471,20 +467,20 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="86" y="23" width="1768" height="1000" extended-state="0" />
-    <editor active="true" />
+    <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
     <layout>
-      <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
+      <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.26086956" sideWeight="0.4978678" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Errors In Solution" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.2730337" sideWeight="0.51598173" order="7" side_tool="true" content_ui="tabs" />
-      <window_info id="Unit Tests" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.19325842" sideWeight="0.4977169" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.27201784" sideWeight="0.5181237" order="7" side_tool="true" content_ui="tabs" />
+      <window_info id="Unit Tests" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.20289855" sideWeight="0.4936034" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.18988764" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="NuGet" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.27865168" sideWeight="0.56392694" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.17579909" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
-      <window_info id="Build" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.2730337" sideWeight="0.48401827" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.17979452" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.1641791" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Build" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.27201784" sideWeight="0.48187634" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.16791044" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
@@ -493,7 +489,6 @@
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
     </layout>
   </component>
@@ -505,18 +500,279 @@
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
-      <breakpoints>
-        <line-breakpoint enabled="true" type="DotNet Breakpoints">
-          <url>file://$PROJECT_DIR$/Tests/EventCalender.Test/controllers/EventsControllerTests.cs</url>
-          <line>20</line>
-          <properties />
-        </line-breakpoint>
-      </breakpoints>
       <option name="time" value="1" />
     </breakpoint-manager>
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/EventCalender/Global.asax.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="270">
+          <caret line="15" column="58" lean-forward="false" selection-start-line="15" selection-start-column="58" selection-end-line="15" selection-end-column="58" />
+          <folding>
+            <marker date="1499432325106" expanded="true" signature="6:114" ph="..." />
+            <marker date="1499432325106" expanded="true" signature="183:529" ph="{...}" />
+            <marker date="1499432325106" expanded="true" signature="232:523" ph="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/EventCalender/App_Start/IocConfig.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="450">
+          <caret line="25" column="34" lean-forward="false" selection-start-line="25" selection-start-column="34" selection-end-line="25" selection-end-column="34" />
+          <folding>
+            <marker date="1499432276208" expanded="true" signature="6:189" ph="..." />
+            <marker date="1499432276208" expanded="true" signature="243:1069" ph="{...}" />
+            <marker date="1499432276208" expanded="true" signature="301:360" ph="{...}" />
+            <marker date="1499432276208" expanded="true" signature="415:1054" ph="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../EventCalender.Data/EventCalender.Data/EventDbRepository.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="342">
+          <caret line="19" column="39" lean-forward="false" selection-start-line="19" selection-start-column="39" selection-end-line="19" selection-end-column="39" />
+          <folding>
+            <marker date="1499432319970" expanded="false" signature="6:73" ph="..." />
+            <marker date="1499432319970" expanded="true" signature="103:743" ph="{...}" />
+            <marker date="1499432319970" expanded="true" signature="159:741" ph="{...}" />
+            <marker date="1499432319970" expanded="true" signature="208:284" ph="{...}" />
+            <marker date="1499432319970" expanded="true" signature="322:398" ph="{...}" />
+            <marker date="1499432319970" expanded="true" signature="433:509" ph="{...}" />
+            <marker date="1499432319970" expanded="true" signature="547:623" ph="{...}" />
+            <marker date="1499432319970" expanded="true" signature="659:735" ph="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../EventCalender.Data/EventCalender.Data/UserDbRepository.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="162">
+          <caret line="9" column="55" lean-forward="false" selection-start-line="9" selection-start-column="12" selection-end-line="9" selection-end-column="55" />
+          <folding>
+            <marker date="1499432319994" expanded="false" signature="6:73" ph="..." />
+            <marker date="1499432319994" expanded="true" signature="103:741" ph="{...}" />
+            <marker date="1499432319994" expanded="true" signature="157:739" ph="{...}" />
+            <marker date="1499432319994" expanded="true" signature="205:281" ph="{...}" />
+            <marker date="1499432319994" expanded="true" signature="318:394" ph="{...}" />
+            <marker date="1499432319994" expanded="true" signature="430:506" ph="{...}" />
+            <marker date="1499432319994" expanded="true" signature="545:621" ph="{...}" />
+            <marker date="1499432319994" expanded="true" signature="657:733" ph="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/EventCalender/Controllers/HomeController.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="324">
+          <caret line="23" column="37" lean-forward="false" selection-start-line="23" selection-start-column="37" selection-end-line="23" selection-end-column="37" />
+          <folding>
+            <marker date="1499427899409" expanded="false" signature="6:133" ph="..." />
+            <marker date="1499427899409" expanded="true" signature="217:604" ph="{...}" />
+            <marker date="1499427899409" expanded="true" signature="259:306" ph="{...}" />
+            <marker date="1499427899409" expanded="true" signature="343:459" ph="{...}" />
+            <marker date="1499427899409" expanded="true" signature="498:598" ph="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/EventCalender/Controllers/EventController.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1044">
+          <caret line="62" column="40" lean-forward="false" selection-start-line="62" selection-start-column="40" selection-end-line="62" selection-end-column="40" />
+          <folding>
+            <marker date="1499430689256" expanded="false" signature="6:128" ph="..." />
+            <marker date="1499430689256" expanded="true" signature="165:1687" ph="{...}" />
+            <marker date="1499430689256" expanded="true" signature="216:1685" ph="{...}" />
+            <marker date="1499430689256" expanded="true" signature="347:420" ph="{...}" />
+            <marker date="1499430689256" expanded="true" signature="485:555" ph="{...}" />
+            <marker date="1499430689256" expanded="true" signature="629:788" ph="{...}" />
+            <marker date="1499430689256" expanded="true" signature="865:1163" ph="{...}" />
+            <marker date="1499430689256" expanded="true" signature="912:977" ph="{...}" />
+            <marker date="1499430689256" expanded="true" signature="1256:1670" ph="{...}" />
+            <marker date="1499430689256" expanded="true" signature="1303:1368" ph="{...}" />
+            <marker date="1499430689256" expanded="true" signature="1398:1463" ph="{...}" />
+            <marker date="1499430689256" expanded="true" signature="1518:1581" ph="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../EventCalender.Data/EventCalender.Data/migrations/Configuration.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="450">
+          <caret line="25" column="0" lean-forward="false" selection-start-line="25" selection-start-column="0" selection-end-line="25" selection-end-column="0" />
+          <folding>
+            <marker date="1499432399339" expanded="true" signature="6:76" ph="..." />
+            <marker date="1499432399339" expanded="true" signature="117:847" ph="{...}" />
+            <marker date="1499432399339" expanded="true" signature="209:845" ph="{...}" />
+            <marker date="1499432399339" expanded="true" signature="246:313" ph="{...}" />
+            <marker date="1499432399339" expanded="true" signature="381:839" ph="{...}" />
+            <marker date="1499432399339" expanded="true" signature="519:729" ph="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Tests/EventCalender.Test/controllers/EventsControllerTests.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="432">
+          <caret line="31" column="14" lean-forward="false" selection-start-line="31" selection-start-column="14" selection-end-line="31" selection-end-column="14" />
+          <folding>
+            <marker date="1499431475783" expanded="false" signature="6:211" ph="..." />
+            <marker date="1499431475783" expanded="true" signature="253:1790" ph="{...}" />
+            <marker date="1499431475783" expanded="true" signature="312:1266" ph="{...}" />
+            <marker date="1499431475783" expanded="true" signature="472:561" ph="{...}" />
+            <marker date="1499431475783" expanded="true" signature="634:1260" ph="{...}" />
+            <marker date="1499431475783" expanded="true" signature="723:795" ph="{...}" />
+            <marker date="1499431475783" expanded="true" signature="1320:1788" ph="{...}" />
+            <marker date="1499431475783" expanded="true" signature="1502:1571" ph="{...}" />
+            <marker date="1499431475783" expanded="true" signature="1636:1782" ph="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../EventCalender.Data/EventCalender.Data/EventCalenderContext.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="432">
+          <caret line="24" column="99" lean-forward="false" selection-start-line="24" selection-start-column="99" selection-end-line="24" selection-end-column="99" />
+          <folding>
+            <marker date="1499432637577" expanded="true" signature="6:151" ph="..." />
+            <marker date="1499432637577" expanded="true" signature="258:775" ph="{...}" />
+            <marker date="1499432637577" expanded="true" signature="326:359" ph="{...}" />
+            <marker date="1499432637577" expanded="true" signature="517:584" ph="{...}" />
+            <marker date="1499432637577" expanded="true" signature="637:769" ph="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/EventCalender/Global.asax.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="270">
+          <caret line="15" column="58" lean-forward="false" selection-start-line="15" selection-start-column="58" selection-end-line="15" selection-end-column="58" />
+          <folding>
+            <marker date="1499432325106" expanded="true" signature="6:114" ph="..." />
+            <marker date="1499432325106" expanded="true" signature="183:529" ph="{...}" />
+            <marker date="1499432325106" expanded="true" signature="232:523" ph="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/EventCalender/App_Start/IocConfig.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="450">
+          <caret line="25" column="34" lean-forward="false" selection-start-line="25" selection-start-column="34" selection-end-line="25" selection-end-column="34" />
+          <folding>
+            <marker date="1499432276208" expanded="true" signature="6:189" ph="..." />
+            <marker date="1499432276208" expanded="true" signature="243:1069" ph="{...}" />
+            <marker date="1499432276208" expanded="true" signature="301:360" ph="{...}" />
+            <marker date="1499432276208" expanded="true" signature="415:1054" ph="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../EventCalender.Data/EventCalender.Data/EventDbRepository.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="342">
+          <caret line="19" column="39" lean-forward="false" selection-start-line="19" selection-start-column="39" selection-end-line="19" selection-end-column="39" />
+          <folding>
+            <marker date="1499432319970" expanded="false" signature="6:73" ph="..." />
+            <marker date="1499432319970" expanded="true" signature="103:743" ph="{...}" />
+            <marker date="1499432319970" expanded="true" signature="159:741" ph="{...}" />
+            <marker date="1499432319970" expanded="true" signature="208:284" ph="{...}" />
+            <marker date="1499432319970" expanded="true" signature="322:398" ph="{...}" />
+            <marker date="1499432319970" expanded="true" signature="433:509" ph="{...}" />
+            <marker date="1499432319970" expanded="true" signature="547:623" ph="{...}" />
+            <marker date="1499432319970" expanded="true" signature="659:735" ph="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../EventCalender.Data/EventCalender.Data/UserDbRepository.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="162">
+          <caret line="9" column="55" lean-forward="false" selection-start-line="9" selection-start-column="12" selection-end-line="9" selection-end-column="55" />
+          <folding>
+            <marker date="1499432319994" expanded="false" signature="6:73" ph="..." />
+            <marker date="1499432319994" expanded="true" signature="103:741" ph="{...}" />
+            <marker date="1499432319994" expanded="true" signature="157:739" ph="{...}" />
+            <marker date="1499432319994" expanded="true" signature="205:281" ph="{...}" />
+            <marker date="1499432319994" expanded="true" signature="318:394" ph="{...}" />
+            <marker date="1499432319994" expanded="true" signature="430:506" ph="{...}" />
+            <marker date="1499432319994" expanded="true" signature="545:621" ph="{...}" />
+            <marker date="1499432319994" expanded="true" signature="657:733" ph="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/EventCalender/Controllers/HomeController.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="324">
+          <caret line="23" column="37" lean-forward="true" selection-start-line="23" selection-start-column="37" selection-end-line="23" selection-end-column="37" />
+          <folding>
+            <marker date="1499427899409" expanded="false" signature="6:133" ph="..." />
+            <marker date="1499427899409" expanded="true" signature="217:604" ph="{...}" />
+            <marker date="1499427899409" expanded="true" signature="259:306" ph="{...}" />
+            <marker date="1499427899409" expanded="true" signature="343:459" ph="{...}" />
+            <marker date="1499427899409" expanded="true" signature="498:598" ph="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/EventCalender/Controllers/EventController.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1044">
+          <caret line="62" column="40" lean-forward="false" selection-start-line="62" selection-start-column="40" selection-end-line="62" selection-end-column="40" />
+          <folding>
+            <marker date="1499430689256" expanded="false" signature="6:128" ph="..." />
+            <marker date="1499430689256" expanded="true" signature="165:1687" ph="{...}" />
+            <marker date="1499430689256" expanded="true" signature="216:1685" ph="{...}" />
+            <marker date="1499430689256" expanded="true" signature="347:420" ph="{...}" />
+            <marker date="1499430689256" expanded="true" signature="485:555" ph="{...}" />
+            <marker date="1499430689256" expanded="true" signature="629:788" ph="{...}" />
+            <marker date="1499430689256" expanded="true" signature="865:1163" ph="{...}" />
+            <marker date="1499430689256" expanded="true" signature="912:977" ph="{...}" />
+            <marker date="1499430689256" expanded="true" signature="1256:1670" ph="{...}" />
+            <marker date="1499430689256" expanded="true" signature="1303:1368" ph="{...}" />
+            <marker date="1499430689256" expanded="true" signature="1398:1463" ph="{...}" />
+            <marker date="1499430689256" expanded="true" signature="1518:1581" ph="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../EventCalender.Data/EventCalender.Data/migrations/Configuration.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="450">
+          <caret line="25" column="0" lean-forward="false" selection-start-line="25" selection-start-column="0" selection-end-line="25" selection-end-column="0" />
+          <folding>
+            <marker date="1499432399339" expanded="true" signature="6:76" ph="..." />
+            <marker date="1499432399339" expanded="true" signature="117:847" ph="{...}" />
+            <marker date="1499432399339" expanded="true" signature="209:845" ph="{...}" />
+            <marker date="1499432399339" expanded="true" signature="246:313" ph="{...}" />
+            <marker date="1499432399339" expanded="true" signature="381:839" ph="{...}" />
+            <marker date="1499432399339" expanded="true" signature="519:729" ph="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Tests/EventCalender.Test/controllers/EventsControllerTests.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="414">
+          <caret line="30" column="27" lean-forward="false" selection-start-line="30" selection-start-column="27" selection-end-line="30" selection-end-column="27" />
+          <folding>
+            <marker date="1499431475783" expanded="false" signature="6:211" ph="..." />
+            <marker date="1499431475783" expanded="true" signature="253:1790" ph="{...}" />
+            <marker date="1499431475783" expanded="true" signature="312:1266" ph="{...}" />
+            <marker date="1499431475783" expanded="true" signature="472:561" ph="{...}" />
+            <marker date="1499431475783" expanded="true" signature="634:1260" ph="{...}" />
+            <marker date="1499431475783" expanded="true" signature="723:795" ph="{...}" />
+            <marker date="1499431475783" expanded="true" signature="1320:1788" ph="{...}" />
+            <marker date="1499431475783" expanded="true" signature="1502:1571" ph="{...}" />
+            <marker date="1499431475783" expanded="true" signature="1636:1782" ph="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/../EventCalender.Data/EventCalender.Data/EventCalenderContext.cs">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="432">
@@ -561,7 +817,8 @@
         <state relative-caret-position="342">
           <caret line="19" column="39" lean-forward="false" selection-start-line="19" selection-start-column="39" selection-end-line="19" selection-end-column="39" />
           <folding>
-            <marker date="1499432319970" expanded="true" signature="6:73" ph="..." />
+            <marker date="1499432319970" expanded="false" signature="6:73" ph="..." />
+            <marker date="1499432319970" expanded="true" signature="103:743" ph="{...}" />
             <marker date="1499432319970" expanded="true" signature="159:741" ph="{...}" />
             <marker date="1499432319970" expanded="true" signature="208:284" ph="{...}" />
             <marker date="1499432319970" expanded="true" signature="322:398" ph="{...}" />
@@ -577,7 +834,8 @@
         <state relative-caret-position="162">
           <caret line="9" column="55" lean-forward="false" selection-start-line="9" selection-start-column="12" selection-end-line="9" selection-end-column="55" />
           <folding>
-            <marker date="1499432319994" expanded="true" signature="6:73" ph="..." />
+            <marker date="1499432319994" expanded="false" signature="6:73" ph="..." />
+            <marker date="1499432319994" expanded="true" signature="103:741" ph="{...}" />
             <marker date="1499432319994" expanded="true" signature="157:739" ph="{...}" />
             <marker date="1499432319994" expanded="true" signature="205:281" ph="{...}" />
             <marker date="1499432319994" expanded="true" signature="318:394" ph="{...}" />
@@ -648,7 +906,6 @@
           <caret line="25" column="51" lean-forward="true" selection-start-line="25" selection-start-column="51" selection-end-line="25" selection-end-column="51" />
           <folding>
             <marker date="1499427899409" expanded="false" signature="6:133" ph="..." />
-            <marker date="1499427899409" expanded="true" signature="170:606" ph="{...}" />
             <marker date="1499427899409" expanded="true" signature="217:604" ph="{...}" />
             <marker date="1499427899409" expanded="true" signature="259:306" ph="{...}" />
             <marker date="1499427899409" expanded="true" signature="343:459" ph="{...}" />
@@ -729,7 +986,7 @@
     <entry file="file://$PROJECT_DIR$/Tests/EventCalender.Test/Tests.cs" />
     <entry file="file://$PROJECT_DIR$/EventCalender/App_Start/IocConfig.cs">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="450">
+        <state relative-caret-position="0">
           <caret line="25" column="34" lean-forward="false" selection-start-line="25" selection-start-column="34" selection-end-line="25" selection-end-column="34" />
           <folding>
             <marker date="1499432276208" expanded="true" signature="6:189" ph="..." />
@@ -763,7 +1020,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/../EventCalender.Data/EventCalender.Data/EventCalenderContext.cs">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="432">
+        <state relative-caret-position="0">
           <caret line="24" column="99" lean-forward="false" selection-start-line="24" selection-start-column="99" selection-end-line="24" selection-end-column="99" />
           <folding>
             <marker date="1499432637577" expanded="true" signature="6:151" ph="..." />
@@ -777,7 +1034,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/../EventCalender.Data/EventCalender.Data/migrations/Configuration.cs">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="450">
+        <state relative-caret-position="0">
           <caret line="25" column="0" lean-forward="false" selection-start-line="25" selection-start-column="0" selection-end-line="25" selection-end-column="0" />
           <folding>
             <marker date="1499432399339" expanded="true" signature="6:76" ph="..." />
@@ -792,7 +1049,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/EventCalender/Global.asax.cs">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="270">
+        <state relative-caret-position="0">
           <caret line="15" column="58" lean-forward="false" selection-start-line="15" selection-start-column="58" selection-end-line="15" selection-end-column="58" />
           <folding>
             <marker date="1499432325106" expanded="true" signature="6:114" ph="..." />
@@ -802,12 +1059,27 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/EventCalender/Controllers/HomeController.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="23" column="37" lean-forward="false" selection-start-line="23" selection-start-column="37" selection-end-line="23" selection-end-column="37" />
+          <folding>
+            <marker date="1499427899409" expanded="false" signature="6:133" ph="..." />
+            <marker date="1499427899409" expanded="true" signature="217:604" ph="{...}" />
+            <marker date="1499427899409" expanded="true" signature="259:306" ph="{...}" />
+            <marker date="1499427899409" expanded="true" signature="343:459" ph="{...}" />
+            <marker date="1499427899409" expanded="true" signature="498:598" ph="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/../EventCalender.Data/EventCalender.Data/EventDbRepository.cs">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="342">
-          <caret line="19" column="39" lean-forward="false" selection-start-line="19" selection-start-column="39" selection-end-line="19" selection-end-column="39" />
+        <state relative-caret-position="184">
+          <caret line="9" column="29" lean-forward="false" selection-start-line="9" selection-start-column="29" selection-end-line="9" selection-end-column="29" />
           <folding>
-            <marker date="1499432319970" expanded="true" signature="6:73" ph="..." />
+            <marker date="1499432319970" expanded="false" signature="6:73" ph="..." />
+            <marker date="1499432319970" expanded="true" signature="103:743" ph="{...}" />
             <marker date="1499432319970" expanded="true" signature="159:741" ph="{...}" />
             <marker date="1499432319970" expanded="true" signature="208:284" ph="{...}" />
             <marker date="1499432319970" expanded="true" signature="322:398" ph="{...}" />
@@ -818,12 +1090,29 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/EventCalender/Scripts/jquery-1.9.1.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="186">
+          <caret line="1474" column="46" lean-forward="false" selection-start-line="1474" selection-start-column="46" selection-end-line="1474" selection-end-column="46" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/EventCalender/Scripts/jquery-1.9.1-vsdoc.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="347">
+          <caret line="72" column="57" lean-forward="true" selection-start-line="72" selection-start-column="57" selection-end-line="72" selection-end-column="57" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/../EventCalender.Data/EventCalender.Data/UserDbRepository.cs">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="162">
-          <caret line="9" column="55" lean-forward="false" selection-start-line="9" selection-start-column="12" selection-end-line="9" selection-end-column="55" />
+          <caret line="9" column="29" lean-forward="false" selection-start-line="9" selection-start-column="29" selection-end-line="9" selection-end-column="29" />
           <folding>
-            <marker date="1499432319994" expanded="true" signature="6:73" ph="..." />
+            <marker date="1499432319994" expanded="false" signature="6:73" ph="..." />
+            <marker date="1499432319994" expanded="true" signature="103:741" ph="{...}" />
             <marker date="1499432319994" expanded="true" signature="157:739" ph="{...}" />
             <marker date="1499432319994" expanded="true" signature="205:281" ph="{...}" />
             <marker date="1499432319994" expanded="true" signature="318:394" ph="{...}" />
@@ -834,24 +1123,9 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/EventCalender/Controllers/HomeController.cs">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="324">
-          <caret line="23" column="37" lean-forward="true" selection-start-line="23" selection-start-column="37" selection-end-line="23" selection-end-column="37" />
-          <folding>
-            <marker date="1499427899409" expanded="false" signature="6:133" ph="..." />
-            <marker date="1499427899409" expanded="true" signature="170:606" ph="{...}" />
-            <marker date="1499427899409" expanded="true" signature="217:604" ph="{...}" />
-            <marker date="1499427899409" expanded="true" signature="259:306" ph="{...}" />
-            <marker date="1499427899409" expanded="true" signature="343:459" ph="{...}" />
-            <marker date="1499427899409" expanded="true" signature="498:598" ph="{...}" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/EventCalender/Controllers/EventController.cs">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="578">
+        <state relative-caret-position="833">
           <caret line="62" column="40" lean-forward="false" selection-start-line="62" selection-start-column="40" selection-end-line="62" selection-end-column="40" />
           <folding>
             <marker date="1499430689256" expanded="false" signature="6:128" ph="..." />
@@ -872,8 +1146,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/Tests/EventCalender.Test/controllers/EventsControllerTests.cs">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="324">
-          <caret line="30" column="27" lean-forward="false" selection-start-line="30" selection-start-column="27" selection-end-line="30" selection-end-column="27" />
+        <state relative-caret-position="-345">
+          <caret line="22" column="0" lean-forward="true" selection-start-line="22" selection-start-column="0" selection-end-line="22" selection-end-column="0" />
           <folding>
             <marker date="1499431475783" expanded="false" signature="6:211" ph="..." />
             <marker date="1499431475783" expanded="true" signature="253:1790" ph="{...}" />

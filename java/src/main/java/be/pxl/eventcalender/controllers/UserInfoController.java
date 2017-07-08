@@ -11,9 +11,6 @@ import javax.servlet.http.HttpServletResponse;
 import javax.servlet.http.HttpSession;
 import java.io.IOException;
 
-/**
- * Created by Maurits on 29-6-2017.
- */
 @WebServlet("/userInfo")
 public class UserInfoController extends HttpServlet {
     @Override

@@ -1,7 +1,7 @@
 <%@ page contentType="text/html;charset=UTF-8" language="java" %>
 <div class="w3-content bodyDivAdd">
     <h1>Add new item</h1>
-    <form method="get" action="/eventcalender/doAdd">
+    <form method="get" action="doAdd">
         <div class="form-group">
             <label class="label label-info">Subject</label>
             <input type="text" class="form-control" name="subject" required>

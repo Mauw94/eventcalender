@@ -13,11 +13,8 @@ import javax.servlet.http.HttpServletResponse;
 import java.io.IOException;
 import java.util.List;
 
-/**
- * Created by Maurits on 2-7-2017.
- */
 @WebServlet("/events")
-public class EventsController extends HttpServlet {
+public class AgendaController extends HttpServlet {
 
     private EventService service = new EventService();
 
@@ -31,7 +28,7 @@ public class EventsController extends HttpServlet {
             System.out.print(eventList);
             req.setAttribute("userName", userName);
             req.setAttribute("eventList", eventList);
-            req.getRequestDispatcher("/WEB-INF/views/eventpage.jsp").forward(req, resp);
+            req.getRequestDispatcher("/WEB-INF/views/agendaPage.jsp").forward(req, resp);
         } else {
             String errorMessage = "Login to have further access.";
             req.getSession().setAttribute("errorMessage", errorMessage);

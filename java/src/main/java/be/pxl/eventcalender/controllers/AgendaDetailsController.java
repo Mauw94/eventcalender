@@ -12,11 +12,8 @@ import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 import java.io.IOException;
 
-/**
- * Created by Maurits on 2-7-2017.
- */
 @WebServlet("/details")
-public class EventDetailsController extends HttpServlet {
+public class AgendaDetailsController extends HttpServlet {
 
     private EventService service = new EventService();
 
@@ -31,7 +28,7 @@ public class EventDetailsController extends HttpServlet {
                 EventBean event = service.getEventById(id);
                 if (event != null) {
                     req.setAttribute("event", event);
-                    req.getRequestDispatcher("/WEB-INF/views/eventDetails.jsp").forward(req, resp);
+                    req.getRequestDispatcher("/WEB-INF/views/agendaDetails.jsp").forward(req, resp);
                 } else { // elseif event is null
                     errorMessage = "No event found.";
                     req.getSession().setAttribute("eventError", errorMessage);

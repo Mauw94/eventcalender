@@ -12,9 +12,6 @@ import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 import java.io.IOException;
 
-/**
- * Created by Mauwi on 7-7-2017.
- */
 @WebServlet("/doEdit")
 public class DoEditController extends HttpServlet {
 

@@ -14,9 +14,6 @@ import java.text.ParseException;
 import java.text.SimpleDateFormat;
 import java.util.Date;
 
-/**
- * Created by Maurits on 3-7-2017.
- */
 @WebServlet("/doAdd")
 public class DoAddController extends HttpServlet {
 

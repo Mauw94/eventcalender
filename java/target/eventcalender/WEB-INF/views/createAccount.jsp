@@ -18,7 +18,7 @@
         </div>
         <!--Retype password for confirmation -->
         <div class="form-group">
-            <a href="/eventcalender/login" class="btn btn-default btn-md">Back</a>
+            <a href="login" class="btn btn-default btn-md">Back</a>
             <input type="submit" value="Create Account" class="btn btn-info btn-md">
         </div>
     </form>

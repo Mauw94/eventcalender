@@ -7,9 +7,6 @@ import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 import java.io.IOException;
 
-/**
- * Created by Maurits on 29-6-2017.
- */
 @WebServlet("/login")
 public class LoginController extends HttpServlet{
     @Override
