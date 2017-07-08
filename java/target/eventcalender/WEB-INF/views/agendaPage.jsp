@@ -1,13 +1,14 @@
 <%@ page contentType="text/html;charset=UTF-8" language="java" %>
 <%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
 <div class="w3-content bodyDiv">
-    <h1>Welcome ${logedinUser.userName}</h1>
+    <h1>Welcome, ${logedinUser.userName}</h1>
     <table class="table table-condensed table-responsive">
         <thead>
         <tr class="active">
             <th class="info">Subject</th>
             <th class="info">Date</th>
-            <th class="info">Details</th>
+            <th class="info">Time</th>
+            <th class="info"></th>
         </tr>
         </thead>
         <tbody>
@@ -15,12 +16,12 @@
             <tr>
                 <td>${event.subject}</td>
                 <td>${event.date}</td>
-                <td>
-                    <a href="/eventcalender/details?id=${event.id}">Show Details</a>
-                </td>
+                <td>${event.time}</td>
+                <td><a href="/eventcalender/details?id=${event.id}" class="btn btn-sm btn-success">Details</a></td>
             </tr>
         </c:forEach>
         </tbody>
     </table>
-    <a href="add" class="btn btn-info btn-sm">Add new item</a>
+    <hr color="black" WIDTH="60%">
+    <a href="/eventcalender/add" class="btn btn-info btn-md">Add new item</a>
 </div>

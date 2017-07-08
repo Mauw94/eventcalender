@@ -1,5 +1,6 @@
 
         // TODO add controller for tasks (ex. programming tasks with estimated time)
         // TODO + time worked etc
-        // TODO add new header item to go to task management
-        // TODO change events to agenda, remove add item
+        // TODO fix bg image
+
+        // TODO change date saving, get name of the day displayed on web page

@@ -11,6 +11,9 @@ import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 import java.io.IOException;
+import java.text.ParseException;
+import java.text.SimpleDateFormat;
+import java.util.Date;
 
 @WebServlet("/doEdit")
 public class DoEditController extends HttpServlet {
@@ -30,6 +33,7 @@ public class DoEditController extends HttpServlet {
             int id = Integer.parseInt(req.getParameter("id"));
 
             EventBean event = new EventBean();
+
             event.setDate(date);
             event.setDescription(description);
             event.setSubject(subject);

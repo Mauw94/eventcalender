@@ -1,4 +1,5 @@
 be\pxl\eventcalender\controllers\DoCreateAccountController.class
+be\pxl\eventcalender\controllers\TaskController.class
 be\pxl\eventcalender\controllers\DoEditController.class
 be\pxl\eventcalender\controllers\CreateAccountController.class
 be\pxl\eventcalender\dao\MySQLConnUtils.class
