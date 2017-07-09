@@ -3,6 +3,11 @@ package be.pxl.eventcalender.Util;
 import be.pxl.eventcalender.models.UserAccount;
 
 import javax.servlet.http.*;
+import java.text.DateFormat;
+import java.text.ParseException;
+import java.text.SimpleDateFormat;
+import java.util.Calendar;
+import java.util.Date;
 
 /**
  * Created by Maurits on 29-6-2017.
@@ -51,5 +56,29 @@ public class ServletUtil {
             }
         }
         return null;
+    }
+
+    public static String convertDateToDayMonthYearFull(String date) {
+        String[] months = {"januari", "februari", "maart", "april", "mei", "juni", "juli", "augustus", "september", "oktober",
+                "november", "december"};
+        String day = date.substring(8, 10);
+        String month = date.substring(6, 7);
+        int monthNm = Integer.parseInt(month);
+        int year = Calendar.getInstance().get(Calendar.YEAR);
+        String newDate = day + "/" + month + "/" + year;
+
+        // get day of the week name
+        SimpleDateFormat dateFormat = new SimpleDateFormat("dd/MM/yyyy");
+        Date dt1 = null;
+        try {
+            dt1 = dateFormat.parse(newDate);
+        } catch (ParseException e) {
+            e.printStackTrace();
+        }
+        DateFormat format2 = new SimpleDateFormat("EEEE");
+        String finalDay = format2.format(dt1);
+        String finalDate = finalDay + ", " + day + " " + months[monthNm] + " " + year;
+
+        return finalDate;
     }
 }

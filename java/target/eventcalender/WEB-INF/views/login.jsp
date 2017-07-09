@@ -11,7 +11,7 @@
         </div>
         <div class="form-group">
             <input type="submit" name="submit" value="Login" class="btn btn-default btn-md">
-            <a href="/eventcalender/createAccount" class="btn btn-info btn-md">Create Account</a>
+            <a href="createAccount" class="btn btn-info btn-md">Create Account</a>
         </div>
     </form>
     <c:if test="${empty logedinUser}">

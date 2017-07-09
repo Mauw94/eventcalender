@@ -28,7 +28,8 @@ public class DoEditController extends HttpServlet {
             String subject = req.getParameter("subject");
             String description = req.getParameter("description");
             String note = req.getParameter("note");
-            String date = req.getParameter("date");
+            String d = req.getParameter("date");
+            String date = ServletUtil.convertDateToDayMonthYearFull(d);
             String time = req.getParameter("time");
             int id = Integer.parseInt(req.getParameter("id"));
 

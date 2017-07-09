@@ -1,4 +1,3 @@
-
 <%@ page contentType="text/html;charset=UTF-8" language="java" %>
 <%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
 
@@ -27,7 +26,7 @@
         </div>
         <div class="form-group">
             <input type="hidden" name="id" value="${event.id}">
-            <a href="/eventcalender/events" class="btn btn-default btn-md">Back</a>
+            <a href="details?id=${event.id}" class="btn btn-default btn-md">Back</a>
             <input type="submit" value="Confirm Changes" class="btn btn-info btn-md">
         </div>
     </form>

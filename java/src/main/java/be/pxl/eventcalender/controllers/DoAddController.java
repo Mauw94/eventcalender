@@ -1,5 +1,6 @@
 package be.pxl.eventcalender.controllers;
 
+import be.pxl.eventcalender.Util.ServletUtil;
 import be.pxl.eventcalender.models.EventBean;
 import be.pxl.eventcalender.services.EventService;
 
@@ -9,11 +10,14 @@ import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 import java.io.IOException;
+import java.text.DateFormat;
 import java.text.ParseException;
 import java.text.SimpleDateFormat;
+import java.util.Calendar;
 import java.util.Date;
 import java.util.Locale;
 
+@SuppressWarnings("ALL")
 @WebServlet("/doAdd")
 public class DoAddController extends HttpServlet {
 
@@ -24,9 +28,17 @@ public class DoAddController extends HttpServlet {
 
         String subject = req.getParameter("subject");
         String description = req.getParameter("description");
-        String date = req.getParameter("date");
-        String time = req.getParameter("time");
         String note = req.getParameter("note");
+
+        // change time
+        String t = req.getParameter("time");
+        String time = t.substring(0, 5);
+
+        // change date
+        String d = req.getParameter("date");
+        String date = ServletUtil.convertDateToDayMonthYearFull(d);
+        System.out.println(date);
+
         EventBean event = new EventBean();
 
         if (description.length() > 0 && description != null && subject.length() > 0 && subject != null) {
@@ -44,4 +56,5 @@ public class DoAddController extends HttpServlet {
             req.getRequestDispatcher("/WEB-INF/views/addItem").forward(req, resp);
         }
     }
+
 }

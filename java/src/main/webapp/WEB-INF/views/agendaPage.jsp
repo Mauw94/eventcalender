@@ -1,6 +1,6 @@
 <%@ page contentType="text/html;charset=UTF-8" language="java" %>
 <%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
-<div class="w3-content bodyDiv">
+<div class="w3-content bodyDivTable">
     <h1>Welcome, ${logedinUser.userName}</h1>
     <table class="table table-condensed table-responsive">
         <thead>
@@ -8,7 +8,8 @@
             <th class="info">Subject</th>
             <th class="info">Date</th>
             <th class="info">Time</th>
-            <th class="info"></th>
+            <th class="info">Details</th>
+            <th class="info">Delete?</th>
         </tr>
         </thead>
         <tbody>
@@ -18,6 +19,7 @@
                 <td>${event.date}</td>
                 <td>${event.time}</td>
                 <td><a href="details?id=${event.id}" class="btn btn-sm btn-success">Details</a></td>
+                <td><a href="delete?id=${event.id}" class="btn btn-danger btn-sm">Delete</a></td>
             </tr>
         </c:forEach>
         </tbody>
