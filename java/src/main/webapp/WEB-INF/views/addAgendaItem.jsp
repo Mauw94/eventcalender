@@ -23,7 +23,7 @@
             <input type="text" class="form-control" name="note" placeholder="optional">
         </div>
         <div class="form-group">
-            <a href="/eventcalender/events" class="btn btn-default btn-md">Back</a>
+            <a href="events" class="btn btn-default btn-md">Back</a>
             <input type="submit" class="btn btn-info btn-md" value="Add">
         </div>
     </form>

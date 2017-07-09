@@ -59,14 +59,12 @@ public class EventService {
         return event;
     }
 
-    public boolean addEventItem(EventBean event) {
-        boolean added = false;
+    public void addEventItem(EventBean event) {
         try {
-            added = DAOUtil.addEventItem(event);
+            DAOUtil.addEventItem(event);
         } catch (SQLException | ClassNotFoundException e) {
             e.printStackTrace();
         }
-        return added;
     }
 
     public void deleteEvent(int id) {
