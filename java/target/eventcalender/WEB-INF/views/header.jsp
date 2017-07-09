@@ -17,7 +17,7 @@
 
     <style>
         body {
-            background: #dbdbdb url("${pageContext.request.contextPath}/images/webbg.jpg") no-repeat fixed;
+            background: #dbdbdb url("${pageContext.request.contextPath}resources/images/webbg.jpg") no-repeat fixed;
         }
 
         #sticky {
