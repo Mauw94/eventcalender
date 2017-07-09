@@ -111,6 +111,17 @@ public class DAOUtil {
         }
     }
 
+    public static void deleteEvent(int id) throws SQLException, ClassNotFoundException {
+        String sql = "DELETE FROM event_table WHERE ID = ?";
+        try (Connection con = MySQLConnUtils.getMySQLConnection()) {
+            try (PreparedStatement statement = con.prepareStatement(sql)) {
+                statement.setInt(1, id);
+                statement.execute();
+                con.close();
+            }
+        }
+    }
+
     public static EventBean getEventById(int id) throws SQLException, ClassNotFoundException {
         String sql = "SELECT * FROM event_table WHERE ID = ?";
         try (Connection con = MySQLConnUtils.getMySQLConnection()) {

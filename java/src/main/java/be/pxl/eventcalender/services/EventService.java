@@ -68,4 +68,12 @@ public class EventService {
         }
         return added;
     }
+
+    public void deleteEvent(int id) {
+        try {
+            DAOUtil.deleteEvent(id);
+        } catch (SQLException | ClassNotFoundException e) {
+            e.printStackTrace();
+        }
+    }
 }

@@ -6,6 +6,8 @@ be\pxl\eventcalender\dao\MySQLConnUtils.class
 be\pxl\eventcalender\controllers\UserInfoController.class
 be\pxl\eventcalender\controllers\DoLoginController.class
 be\pxl\eventcalender\Util\ServletUtil.class
+be\pxl\eventcalender\controllers\DeleteController.class
+be\pxl\eventcalender\controllers\DoDeleteController.class
 be\pxl\eventcalender\models\UserAccount.class
 be\pxl\eventcalender\models\EventBean.class
 be\pxl\eventcalender\controllers\DoAddController.class

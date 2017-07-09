@@ -15,7 +15,7 @@
 
     <style>
         body {
-            background: #fffde2 url("/images/webbg.jpg") no-repeat fixed;
+            background: #dbdbdb url("/images/webbg.jpg") no-repeat fixed;
         }
 
         #sticky {
@@ -72,6 +72,28 @@
             margin-top: 220px;
             align-items: center;
             justify-content: center;
+        }
+
+        html {
+            font-size: 20px;
+        }
+
+        @include media-breakpoint-up(sm) {
+            html {
+                font-size: 12px;
+            }
+        }
+
+        @include media-breakpoint-up(md) {
+            html {
+                font-size: 16px;
+            }
+        }
+
+        @include media-breakpoint-up(lg) {
+            html {
+                font-size: 28px;
+            }
         }
     </style>
 </head>
