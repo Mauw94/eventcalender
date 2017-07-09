@@ -1,4 +1,4 @@
-﻿-- phpMyAdmin SQL Dump
+-- phpMyAdmin SQL Dump
 -- version 4.6.5.2
 -- https://www.phpmyadmin.net/
 --
@@ -41,11 +41,7 @@ CREATE TABLE `event_table` (
 
 INSERT INTO `event_table` (`ID`, `SUBJECT`, `DESCRIPTION`, `NOTE`, `TIME`, `DATE`) VALUES
 (1, 'Test', 'Dit is een test', 'Test voor CI', '03:12:21', '2017-07-19'),
-(2, 'New', 'Test123', 'New test', '05:08:13', '2017-07-13'),
-(3, 'sdsdf', 'sdfsdf', '', '01:01:00', '2017-07-06'),
-(4, 'Vakantie', 'Frankrijk met de fam', '', '12:00:00', '2017-07-14'),
-(5, 'noordwijk', '', 'bas gaat mee', '11:00:00', '2017-07-04'),
-(6, 'uiteten', 'witsand', 'ik wil pizza', '20:00:00', '2017-07-05');
+(2, 'uiteten', 'witsand', 'ik wil pizza', '20:00:00', '2017-07-05');
 
 -- --------------------------------------------------------
 
@@ -64,11 +60,6 @@ CREATE TABLE `users` (
 
 INSERT INTO `users` (`username`, `password`) VALUES
 ('Maurits', '123'),
-('sad', 'asd'),
-('asd', 'asd'),
-('Testuser', 'test'),
-('test2', '123'),
-('bob', '123'),
 ('bas', '123');
 
 --

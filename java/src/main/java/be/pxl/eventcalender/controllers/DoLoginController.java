@@ -14,7 +14,6 @@ import java.io.IOException;
 @WebServlet("/doLogin")
 public class DoLoginController extends HttpServlet {
     private EventService service = new EventService();
-
     @Override
     protected void doGet(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
 

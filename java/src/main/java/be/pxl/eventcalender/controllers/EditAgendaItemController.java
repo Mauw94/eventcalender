@@ -10,11 +10,8 @@ import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 import java.io.IOException;
 
-/**
- * Created by Mauwi on 7-7-2017.
- */
 @WebServlet("/edit")
-public class EditController extends HttpServlet {
+public class EditAgendaItemController extends HttpServlet {
 
     private EventService service = new EventService();
 
@@ -24,6 +21,6 @@ public class EditController extends HttpServlet {
         int id = Integer.parseInt(req.getParameter("id"));
         EventBean event = service.getEventById(id);
         req.setAttribute("event", event);
-        req.getRequestDispatcher("/WEB-INF/views/editItem.jsp").forward(req ,resp);
+        req.getRequestDispatcher("/WEB-INF/views/editAgendaItem.jsp").forward(req ,resp);
     }
 }

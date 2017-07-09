@@ -1,7 +1,7 @@
 <%@ page contentType="text/html;charset=UTF-8" language="java" %>
 <%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
 <div class="w3-content bodyDivTable">
-    <table class="table table-striped table-responsive">
+    <table class="table table-condensed table-responsive">
         <thead>
         <tr class="info">
             <th class="info">Subject</th>
@@ -21,7 +21,7 @@
         </tr>
         </tbody>
     </table>
-    <a href="/eventcalender/events" class="btn btn-default btn-md">Back</a>
-    <a href="/eventcalender/edit?id=${event.id}" class="btn btn-info btn-md">Edit</a>
-    <a href="/eventcalender/delete" class="btn btn-danger btn-md">Delete</a>
+    <a href="events" class="btn btn-default btn-md">Back</a>
+    <a href="edit?id=${event.id}" class="btn btn-info btn-md">Edit</a>
+    <a href="delete" class="btn btn-danger btn-md">Delete</a>
 </div>

@@ -10,9 +10,6 @@ import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 import java.io.IOException;
 
-/**
- * Created by Maurits on 3-7-2017.
- */
 @WebServlet("/add")
 public class AddController extends HttpServlet {
     @Override
@@ -20,7 +17,7 @@ public class AddController extends HttpServlet {
 
         UserAccount user = ServletUtil.getLogedinUser(req.getSession());
         if (user != null) {
-            req.getRequestDispatcher("/WEB-INF/views/addItem.jsp").forward(req, resp);
+            req.getRequestDispatcher("/WEB-INF/views/addAgendaItem.jsp").forward(req, resp);
         } else {
             String errorMessage = "Login to have further access.";
             req.getSession().setAttribute("errorMessage", errorMessage);

@@ -96,6 +96,7 @@ public class DAOUtil {
                     String time = rs.getString(5);
                     String date = rs.getString(6);
                     EventBean event = new EventBean();
+
                     event.setId(id);
                     event.setSubject(subject);
                     event.setDescription(descr);

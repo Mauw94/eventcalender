@@ -1,7 +1,7 @@
 be\pxl\eventcalender\controllers\DoCreateAccountController.class
+be\pxl\eventcalender\controllers\TaskController.class
 be\pxl\eventcalender\controllers\DoEditController.class
 be\pxl\eventcalender\controllers\CreateAccountController.class
-be\pxl\eventcalender\controllers\EventDetailsController.class
 be\pxl\eventcalender\dao\MySQLConnUtils.class
 be\pxl\eventcalender\controllers\UserInfoController.class
 be\pxl\eventcalender\controllers\DoLoginController.class
@@ -11,9 +11,7 @@ be\pxl\eventcalender\models\EventBean.class
 be\pxl\eventcalender\controllers\DoAddController.class
 be\pxl\eventcalender\controllers\AddController.class
 be\pxl\eventcalender\services\EventService.class
-be\pxl\eventcalender\controllers\EventsController.class
 be\pxl\eventcalender\controllers\LoginController.class
 be\pxl\eventcalender\dao\DAOUtil.class
-be\pxl\eventcalender\controllers\EditController.class
 be\pxl\eventcalender\controllers\HomeController.class
 be\pxl\eventcalender\controllers\LogoutController.class

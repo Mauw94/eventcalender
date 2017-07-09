@@ -6,7 +6,7 @@
   To change this template use File | Settings | File Templates.
 --%>
 <%@ page contentType="text/html;charset=UTF-8" language="java" %>
-<meta http-equiv="refresh" content="3;/eventcalender/home" />
+<meta http-equiv="refresh" content="2;/eventcalender/home" />
 <div class="logout">
     <h1>Logging off.. </h1>
     <p>Returning to login page</p>
