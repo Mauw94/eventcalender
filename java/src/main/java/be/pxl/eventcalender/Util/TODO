@@ -1,6 +1,6 @@
 
-        // TODO add controller for tasks (ex. programming tasks with estimated time)
-        // TODO + time worked etc
+            // TODO + time worked etc
         // TODO fix bg image
 
-        // TODO change date saving, get name of the day displayed on web page
+// TODO when you edit an item and forget the date it should display an error on the page and
+// TODO other fields should be kept filled in

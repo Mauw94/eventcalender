@@ -24,29 +24,38 @@ public class DoEditController extends HttpServlet {
     protected void doPost(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
 
         UserAccount user = ServletUtil.getLogedinUser(req.getSession());
+        String errorMessage;
+
         if (user != null) {
             String subject = req.getParameter("subject");
             String description = req.getParameter("description");
             String note = req.getParameter("note");
             String d = req.getParameter("date");
-            String date = ServletUtil.convertDateToDayMonthYearFull(d);
-            String time = req.getParameter("time");
-            int id = Integer.parseInt(req.getParameter("id"));
+            if (d.length() >= 10) {
+                String date = ServletUtil.convertDateToDayMonthYearFull(d);
+                String time = req.getParameter("time");
+                int id = Integer.parseInt(req.getParameter("id"));
 
-            EventBean event = new EventBean();
+                EventBean event = new EventBean();
 
-            event.setDate(date);
-            event.setDescription(description);
-            event.setSubject(subject);
-            event.setTime(time);
-            event.setNote(note);
-            event.setId(id);
+                event.setDate(date);
+                event.setDescription(description);
+                event.setSubject(subject);
+                event.setTime(time);
+                event.setNote(note);
+                event.setId(id);
 
-            service.updateEvent(event, id);
-            req.setAttribute("event", event);
-            req.getRequestDispatcher("/WEB-INF/views/edited.jsp").forward(req, resp);
+                service.updateEvent(event, id);
+                req.setAttribute("event", event);
+                req.getRequestDispatcher("/WEB-INF/views/edited.jsp").forward(req, resp);
+            } else {
+                errorMessage = "Fill in the date.";
+                req.getSession().setAttribute("errprEdit", errorMessage);
+                req.getRequestDispatcher("/WEB-INF/views/editAgendaItem.jsp").forward(req, resp);
+            }
+
         } else {
-            String errorMessage = "Login to have further access.";
+            errorMessage = "Login to have further access.";
             req.getSession().setAttribute("errorMessage", errorMessage);
             req.getRequestDispatcher("/WEB-INF/views/login.jsp").forward(req, resp);
         }

@@ -30,4 +30,5 @@
             <input type="submit" value="Confirm Changes" class="btn btn-info btn-md">
         </div>
     </form>
+    <p>${errorEdit}</p>
 </div>

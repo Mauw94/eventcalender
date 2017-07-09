@@ -61,13 +61,22 @@ public class ServletUtil {
     public static String convertDateToDayMonthYearFull(String date) {
         String[] months = {"januari", "februari", "maart", "april", "mei", "juni", "juli", "augustus", "september", "oktober",
                 "november", "december"};
+        // get the day
         String day = date.substring(8, 10);
+
+        // get the month
         String month = date.substring(6, 7);
+
+        // change to int for use in array
         int monthNm = Integer.parseInt(month);
+
+        // get the current year
         int year = Calendar.getInstance().get(Calendar.YEAR);
+
+        // create date string
         String newDate = day + "/" + month + "/" + year;
 
-        // get day of the week name
+        // create new date object with newDate and get the name of the day + name of the month
         SimpleDateFormat dateFormat = new SimpleDateFormat("dd/MM/yyyy");
         Date dt1 = null;
         try {
@@ -75,10 +84,9 @@ public class ServletUtil {
         } catch (ParseException e) {
             e.printStackTrace();
         }
-        DateFormat format2 = new SimpleDateFormat("EEEE");
-        String finalDay = format2.format(dt1);
-        String finalDate = finalDay + ", " + day + " " + months[monthNm] + " " + year;
+        DateFormat dayNameFormat = new SimpleDateFormat("EEEE");
+        String dayName = dayNameFormat.format(dt1);
 
-        return finalDate;
+        return dayName + ", " + day + " " + months[monthNm] + " " + year;
     }
 }
