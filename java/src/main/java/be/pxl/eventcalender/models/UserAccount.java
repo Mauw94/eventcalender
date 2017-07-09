@@ -1,18 +1,19 @@
 package be.pxl.eventcalender.models;
 
-/**
- * Created by Maurits on 29-6-2017.
- */
 public class UserAccount {
+    private int id;
     private String userName;
     private String password;
 
-    public UserAccount(String userName, String password) {
+    public UserAccount(int id, String userName, String password) {
+        this.id = id;
+
         this.userName = userName;
         this.password = password;
     }
 
-    public UserAccount() {}
+    public UserAccount() {
+    }
 
     public String getUserName() {
         return userName;
@@ -29,4 +30,13 @@ public class UserAccount {
     public void setPassword(String password) {
         this.password = password;
     }
+
+    public int getId() {
+        return id;
+    }
+
+    public void setId(int id) {
+        this.id = id;
+    }
+
 }

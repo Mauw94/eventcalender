@@ -23,8 +23,9 @@ public class DAOUtil {
                 ResultSet rs = stmt.executeQuery();
                 if (rs.next()) {
                     UserAccount user = new UserAccount();
-                    user.setUserName(rs.getString(1));
-                    user.setPassword(rs.getString(2));
+                    user.setId(rs.getInt(1));
+                    user.setUserName(rs.getString(2));
+                    user.setPassword(rs.getString(3));
                     return user;
                 } else {
                     return null;
