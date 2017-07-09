@@ -14,8 +14,7 @@
     <jsp-property-group>
       <description>header and footer settings</description>
       <url-pattern>/*</url-pattern>
-      <include-prelude>/WEB-INF/views/header.html</include-prelude>
-      <include-coda>/WEB-INF/views/footer.html</include-coda>
+
     </jsp-property-group>
   </jsp-config>
 </web-app>

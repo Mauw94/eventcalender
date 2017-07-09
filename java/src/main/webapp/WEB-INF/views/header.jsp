@@ -1,3 +1,5 @@
+<%@ page contentType="text/html;charset=UTF-8" language="java" %>
+<%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -15,7 +17,7 @@
 
     <style>
         body {
-            background: #dbdbdb url("/images/webbg.jpg") no-repeat fixed;
+            background: #dbdbdb url("${pageContext.request.contextPath}/images/webbg.jpg") no-repeat fixed;
         }
 
         #sticky {

@@ -1,5 +1,4 @@
-<%@ page contentType="text/html;charset=UTF-8" language="java" %>
-<%@ taglib uri="http://java.sun.com/jsp/jstl/core" prefix="c" %>
+<%@ include file="header.jsp"%>
 <div class="w3-content bodyDiv ">
     <h1>Please login below</h1>
     <form method="get" action="doLogin">
@@ -18,3 +17,4 @@
         ${errorMessage}
     </c:if>
 </div>
+<%@ include file="footer.jsp"%>

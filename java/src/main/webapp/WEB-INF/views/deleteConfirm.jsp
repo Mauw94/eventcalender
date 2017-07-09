@@ -1,4 +1,4 @@
-<%@ page contentType="text/html;charset=UTF-8" language="java" %>
+<%@ include file="header.jsp"%>
 <div class="w3-content bodyDiv">
     <div style="text-align: center">
         <h2>Delete item ${event.subject}?</h2>
@@ -6,3 +6,4 @@
         <a href="events" class="btn btn-success btn-lg">No</a>
     </div>
 </div>
+<%@ include file="footer.jsp"%>

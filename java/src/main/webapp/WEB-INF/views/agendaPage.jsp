@@ -1,5 +1,4 @@
-<%@ page contentType="text/html;charset=UTF-8" language="java" %>
-<%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
+<%@ include file="header.jsp"%>
 <div class="w3-content bodyDivTable">
     <h1>Welcome, ${logedinUser.userName}</h1>
     <table class="table table-condensed table-responsive">
@@ -27,3 +26,4 @@
     <hr color="black">
     <a href="add" class="btn btn-info btn-md">Add new item</a>
 </div>
+<%@ include file="footer.jsp"%>

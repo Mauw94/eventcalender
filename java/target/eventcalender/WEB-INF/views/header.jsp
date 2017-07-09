@@ -1,11 +1,5 @@
-<%--
-  Created by IntelliJ IDEA.
-  User: Mauwi
-  Date: 8-7-2017
-  Time: 19:06
-  To change this template use File | Settings | File Templates.
---%>
 <%@ page contentType="text/html;charset=UTF-8" language="java" %>
+<%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -21,10 +15,9 @@
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 
-    <!-- #fffde2 bg color -->
     <style>
         body {
-            background: url("${pageContext.request.contextPath}/images/webbg.jpg") no-repeat fixed;
+            background: #dbdbdb url("${pageContext.request.contextPath}/images/webbg.jpg") no-repeat fixed;
         }
 
         #sticky {
@@ -76,11 +69,33 @@
         }
 
         .bodyDivTable {
-            width: 50%;
+            width: 70%;
             margin: 0 auto;
             margin-top: 220px;
             align-items: center;
             justify-content: center;
+        }
+
+        html {
+            font-size: 20px;
+        }
+
+        @include media-breakpoint-up(sm) {
+            html {
+                font-size: 12px;
+            }
+        }
+
+        @include media-breakpoint-up(md) {
+            html {
+                font-size: 16px;
+            }
+        }
+
+        @include media-breakpoint-up(lg) {
+            html {
+                font-size: 28px;
+            }
         }
     </style>
 </head>

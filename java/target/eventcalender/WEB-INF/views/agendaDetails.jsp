@@ -1,5 +1,4 @@
-<%@ page contentType="text/html;charset=UTF-8" language="java" %>
-<%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
+<%@ include file="header.jsp"%>
 <div class="w3-content bodyDivTable">
     <table class="table table-condensed table-responsive">
         <thead>
@@ -24,3 +23,4 @@
     <a href="events" class="btn btn-default btn-md">Back</a>
     <a href="edit?id=${event.id}" class="btn btn-info btn-md">Edit</a>
 </div>
+<%@ include file="footer.jsp"%>
