@@ -1,7 +1,7 @@
 package be.pxl.eventcalender.controllers;
 
 import be.pxl.eventcalender.Util.ServletUtil;
-import be.pxl.eventcalender.models.EventBean;
+import be.pxl.eventcalender.models.AgendaItem;
 import be.pxl.eventcalender.models.UserAccount;
 import be.pxl.eventcalender.services.EventService;
 
@@ -24,8 +24,7 @@ public class AgendaController extends HttpServlet {
         UserAccount user = ServletUtil.getLogedinUser(req.getSession());
         if (user != null) {
             String userName = ServletUtil.getUserNameInCookie(req);
-            List<EventBean> eventList = service.getAllEvents();
-            System.out.print(eventList);
+            List<AgendaItem> eventList = service.getAllEvents();
             req.setAttribute("userName", userName);
             req.setAttribute("eventList", eventList);
             req.getRequestDispatcher("/WEB-INF/views/agendaPage.jsp").forward(req, resp);

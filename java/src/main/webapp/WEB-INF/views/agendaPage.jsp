@@ -1,6 +1,6 @@
 <%@ include file="header.jsp"%>
 <div class="w3-content bodyDivTable">
-    <h1>Welcome, ${logedinUser.userName}</h1>
+    <h1>Agenda</h1>
     <table class="table table-condensed table-responsive">
         <thead>
         <tr class="active">
@@ -17,13 +17,13 @@
                 <td>${event.subject}</td>
                 <td>${event.date}</td>
                 <td>${event.time}</td>
-                <td><a href="details?id=${event.id}" class="btn btn-sm btn-success">Details</a></td>
-                <td><a href="delete?id=${event.id}" class="btn btn-danger btn-sm">Delete</a></td>
+                <td><a href="agendaDetails?id=${event.id}" class="btn btn-sm btn-success">Details</a></td>
+                <td><a href="agendaDelete?id=${event.id}" class="btn btn-danger btn-sm">Delete</a></td>
             </tr>
         </c:forEach>
         </tbody>
     </table>
     <hr color="black">
-    <a href="add" class="btn btn-info btn-md">Add new item</a>
+    <a href="agendaAdd" class="btn btn-info btn-md">Add new item</a>
 </div>
 <%@ include file="footer.jsp"%>

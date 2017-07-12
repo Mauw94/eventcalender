@@ -1,7 +1,7 @@
 package be.pxl.eventcalender.controllers;
 
 import be.pxl.eventcalender.Util.ServletUtil;
-import be.pxl.eventcalender.models.EventBean;
+import be.pxl.eventcalender.models.AgendaItem;
 import be.pxl.eventcalender.services.EventService;
 
 import javax.servlet.ServletException;
@@ -10,12 +10,6 @@ import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 import java.io.IOException;
-import java.text.DateFormat;
-import java.text.ParseException;
-import java.text.SimpleDateFormat;
-import java.util.Calendar;
-import java.util.Date;
-import java.util.Locale;
 
 @SuppressWarnings("ALL")
 @WebServlet("/doAdd")
@@ -39,7 +33,7 @@ public class DoAddController extends HttpServlet {
         String date = ServletUtil.convertDateToDayMonthYearFull(d);
         System.out.println(date);
 
-        EventBean event = new EventBean();
+        AgendaItem event = new AgendaItem();
 
         if (description.length() > 0 && description != null && subject.length() > 0 && subject != null) {
             event.setSubject(subject);
@@ -47,6 +41,7 @@ public class DoAddController extends HttpServlet {
             event.setNote(note);
             event.setDate(date);
             event.setTime(time);
+            event.setActualDate(d);
 
             service.addEventItem(event);
             resp.sendRedirect("events");

@@ -1,6 +1,6 @@
 package be.pxl.eventcalender.controllers;
 
-import be.pxl.eventcalender.models.EventBean;
+import be.pxl.eventcalender.models.AgendaItem;
 import be.pxl.eventcalender.services.EventService;
 
 import javax.servlet.ServletException;
@@ -19,7 +19,7 @@ public class EditAgendaItemController extends HttpServlet {
     protected void doGet(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
 
         int id = Integer.parseInt(req.getParameter("id"));
-        EventBean event = service.getEventById(id);
+        AgendaItem event = service.getEventById(id);
         req.setAttribute("event", event);
         req.getRequestDispatcher("/WEB-INF/views/editAgendaItem.jsp").forward(req ,resp);
     }

@@ -1,7 +1,8 @@
 package be.pxl.eventcalender.services;
 
 import be.pxl.eventcalender.dao.DAOUtil;
-import be.pxl.eventcalender.models.EventBean;
+import be.pxl.eventcalender.models.AgendaItem;
+import be.pxl.eventcalender.models.Task;
 import be.pxl.eventcalender.models.UserAccount;
 
 import java.sql.SQLException;
@@ -30,7 +31,7 @@ public class EventService {
         return updated;
     }
 
-    public void updateEvent(EventBean event, int id) {
+    public void updateEvent(AgendaItem event, int id) {
         try {
             DAOUtil.updateEvent(event, id);
         } catch (SQLException | ClassNotFoundException e) {
@@ -38,9 +39,9 @@ public class EventService {
         }
     }
 
-    public List<EventBean> getAllEvents()
+    public List<AgendaItem> getAllEvents()
     {
-        List<EventBean> eventList = new ArrayList<>();
+        List<AgendaItem> eventList = new ArrayList<>();
         try {
             eventList = DAOUtil.getAllEvents();
         } catch (SQLException | ClassNotFoundException e) {
@@ -49,8 +50,18 @@ public class EventService {
         return eventList;
     }
 
-    public EventBean getEventById(int id) {
-        EventBean event = new EventBean();
+    public List<Task> getAllTasks() {
+        List<Task> taskList = new ArrayList<>();
+        try {
+            taskList = DAOUtil.getAllTasks();
+        } catch (SQLException | ClassNotFoundException e) {
+            e.printStackTrace();
+        }
+        return taskList;
+    }
+
+    public AgendaItem getEventById(int id) {
+        AgendaItem event = new AgendaItem();
         try {
             event = DAOUtil.getEventById(id);
         } catch (SQLException | ClassNotFoundException e) {
@@ -59,7 +70,7 @@ public class EventService {
         return event;
     }
 
-    public void addEventItem(EventBean event) {
+    public void addEventItem(AgendaItem event) {
         try {
             DAOUtil.addEventItem(event);
         } catch (SQLException | ClassNotFoundException e) {
@@ -73,5 +84,15 @@ public class EventService {
         } catch (SQLException | ClassNotFoundException e) {
             e.printStackTrace();
         }
+    }
+
+    public String getEventActualDate(int id) {
+        String date = "";
+        try {
+            date =DAOUtil.getEventActualDate(id);
+        } catch (SQLException | ClassNotFoundException e) {
+            e.printStackTrace();
+        }
+        return date;
     }
 }

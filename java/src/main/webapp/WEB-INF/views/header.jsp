@@ -104,9 +104,9 @@
     <div class="w3-bar w3-black w3-card-2">
         <a class="w3-bar-item w3-button w3-padding-large w3-hide-medium w3-hide-large w3-right"><i
                 class="fa fa-bars"></i></a>
-        <a href="/eventcalender/login" class="w3-bar-item w3-button w3-padding-large">LOGIN</a>
-        <a href="/eventcalender/logout" class="w3-bar-item w3-button w3-padding-large w3-hide-small">LOGOUT</a>
-        <a href="/eventcalender/events" class="w3-bar-item w3-button w3-padding-large w3-hide-small">AGENDA</a>
-        <a href="/eventcalender/task" class="w3-bar-item w3-button w3-padding-large w3-hide-small">TASK MANAGEMENT</a>
+        <a href="login" class="w3-bar-item w3-button w3-padding-large">LOGIN</a>
+        <a href="logout" class="w3-bar-item w3-button w3-padding-large w3-hide-small">LOGOUT</a>
+        <a href="events" class="w3-bar-item w3-button w3-padding-large w3-hide-small">AGENDA</a>
+        <a href="pageSwitch" class="w3-bar-item w3-button w3-padding-large w3-hide-small">TASK MANAGEMENT</a>
     </div>
 </div>

@@ -2,11 +2,11 @@ C:\Users\Mauwi\Documents\Git\eventcalender\java\src\main\java\be\pxl\eventcalend
 C:\Users\Mauwi\Documents\Git\eventcalender\java\src\main\java\be\pxl\eventcalender\controllers\DeleteController.java
 C:\Users\Mauwi\Documents\Git\eventcalender\java\src\main\java\be\pxl\eventcalender\controllers\DoLoginController.java
 C:\Users\Mauwi\Documents\Git\eventcalender\java\src\main\java\be\pxl\eventcalender\controllers\DoEditController.java
-C:\Users\Mauwi\Documents\Git\eventcalender\java\src\main\java\be\pxl\eventcalender\models\EventBean.java
 C:\Users\Mauwi\Documents\Git\eventcalender\java\src\main\java\be\pxl\eventcalender\controllers\DoDeleteController.java
 C:\Users\Mauwi\Documents\Git\eventcalender\java\src\main\java\be\pxl\eventcalender\controllers\CreateAccountController.java
 C:\Users\Mauwi\Documents\Git\eventcalender\java\src\main\java\be\pxl\eventcalender\controllers\EditAgendaItemController.java
 C:\Users\Mauwi\Documents\Git\eventcalender\java\src\main\java\be\pxl\eventcalender\dao\DAOUtil.java
+C:\Users\Mauwi\Documents\Git\eventcalender\java\src\main\java\be\pxl\eventcalender\models\AgendaItem.java
 C:\Users\Mauwi\Documents\Git\eventcalender\java\src\main\java\be\pxl\eventcalender\controllers\DoAddController.java
 C:\Users\Mauwi\Documents\Git\eventcalender\java\src\main\java\be\pxl\eventcalender\controllers\DoCreateAccountController.java
 C:\Users\Mauwi\Documents\Git\eventcalender\java\src\main\java\be\pxl\eventcalender\models\UserAccount.java
@@ -20,3 +20,5 @@ C:\Users\Mauwi\Documents\Git\eventcalender\java\src\main\java\be\pxl\eventcalend
 C:\Users\Mauwi\Documents\Git\eventcalender\java\src\main\java\be\pxl\eventcalender\controllers\UserInfoController.java
 C:\Users\Mauwi\Documents\Git\eventcalender\java\src\main\java\be\pxl\eventcalender\controllers\LoginController.java
 C:\Users\Mauwi\Documents\Git\eventcalender\java\src\main\java\be\pxl\eventcalender\dao\MySQLConnUtils.java
+C:\Users\Mauwi\Documents\Git\eventcalender\java\src\main\java\be\pxl\eventcalender\models\Task.java
+C:\Users\Mauwi\Documents\Git\eventcalender\java\src\main\java\be\pxl\eventcalender\controllers\PageSwitchController.java

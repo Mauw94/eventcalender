@@ -1,7 +1,7 @@
 package be.pxl.eventcalender.controllers;
 
 import be.pxl.eventcalender.Util.ServletUtil;
-import be.pxl.eventcalender.models.EventBean;
+import be.pxl.eventcalender.models.AgendaItem;
 import be.pxl.eventcalender.models.UserAccount;
 import be.pxl.eventcalender.services.EventService;
 
@@ -12,7 +12,7 @@ import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 import java.io.IOException;
 
-@WebServlet("/details")
+@WebServlet("/agendaDetails")
 public class AgendaDetailsController extends HttpServlet {
 
     private EventService service = new EventService();
@@ -25,7 +25,7 @@ public class AgendaDetailsController extends HttpServlet {
         if (user != null) {
             int id = Integer.parseInt(req.getParameter("id"));
             if (id > 0) {
-                EventBean event = service.getEventById(id);
+                AgendaItem event = service.getEventById(id);
                 if (event != null) {
                     req.setAttribute("event", event);
                     req.getRequestDispatcher("/WEB-INF/views/agendaDetails.jsp").forward(req, resp);

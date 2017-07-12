@@ -1,11 +1,14 @@
 package be.pxl.eventcalender.Util;
 
 import be.pxl.eventcalender.models.UserAccount;
+import be.pxl.eventcalender.services.EventService;
 
 import javax.servlet.http.*;
 import java.text.DateFormat;
 import java.text.ParseException;
 import java.text.SimpleDateFormat;
+import java.time.LocalDate;
+import java.time.format.DateTimeFormatter;
 import java.util.Calendar;
 import java.util.Date;
 
@@ -15,6 +18,9 @@ import java.util.Date;
 public class ServletUtil {
 
     private static final String ATT_NAME_USER_NAME = "ATTRIBUTE_FOR_STORE_USER_IN_COOKIE";
+    private static String[] months = {"januari", "februari", "maart", "april", "mei", "juni", "juli", "augustus", "september", "oktober",
+            "november", "december"};
+    private static EventService service = new EventService();
 
     // Store logined user
     public static void storeLogedinUser(HttpSession session, UserAccount logedinUser) {
@@ -28,8 +34,7 @@ public class ServletUtil {
 
     // Get the user information stored in the session
     public static UserAccount getLogedinUser(HttpSession session) {
-        UserAccount userAccount = (UserAccount) (session.getAttribute("logedinUser"));
-        return userAccount;
+        return (UserAccount) (session.getAttribute("logedinUser"));
     }
 
     // Store user info in Cookie
@@ -58,20 +63,12 @@ public class ServletUtil {
         return null;
     }
 
-    // TODO calculate if a date has expired, delete the agenda item
-
-    public static String checkIfDateHasExpired(String date)
-    {
-
-        return "";
-    }
     /*
         converts a date to name of the day + day number + name of the month + year
         example: 2017-07-11 TO dinsdag, 07 juli 2017
      */
     public static String convertDateToDayMonthYearFull(String date) {
-        String[] months = {"januari", "februari", "maart", "april", "mei", "juni", "juli", "augustus", "september", "oktober",
-                "november", "december"};
+
         // get the day
         String day = date.substring(8, 10);
 

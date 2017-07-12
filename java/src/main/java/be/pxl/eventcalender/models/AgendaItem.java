@@ -1,30 +1,31 @@
 package be.pxl.eventcalender.models;
 
+import java.io.Serializable;
 import java.sql.Time;
 import java.util.Date;
 
-/**
- * Created by Maurits on 29-6-2017.
- */
-public class EventBean {
+public class AgendaItem implements Serializable{
 
     private int Id;
     private String subject;
     private String description;
     private String note;
     private String date;
+    private String actualDate;
     private String time;
 
-    public EventBean(int id, String subject, String description, String note, String date, String time) {
+    public AgendaItem(int id, String subject, String description, String note, String date, String time, String actualDate) {
         Id = id;
         this.subject = subject;
         this.description = description;
         this.note = note;
         this.date = date;
         this.time = time;
+        this.actualDate = actualDate;
     }
 
-    public EventBean() {}
+    public AgendaItem() {
+    }
 
     public int getId() {
         return Id;
@@ -72,6 +73,14 @@ public class EventBean {
 
     public void setTime(String time) {
         this.time = time;
+    }
+
+    public String getActualDate() {
+        return actualDate;
+    }
+
+    public void setActualDate(String actualDate) {
+        this.actualDate = actualDate;
     }
 }
 

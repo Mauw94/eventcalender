@@ -1,7 +1,7 @@
 package be.pxl.eventcalender.controllers;
 
 import be.pxl.eventcalender.Util.ServletUtil;
-import be.pxl.eventcalender.models.EventBean;
+import be.pxl.eventcalender.models.AgendaItem;
 import be.pxl.eventcalender.models.UserAccount;
 import be.pxl.eventcalender.services.EventService;
 
@@ -11,14 +11,13 @@ import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 import java.io.IOException;
-import java.text.ParseException;
-import java.text.SimpleDateFormat;
-import java.util.Date;
 
 @WebServlet("/doEdit")
 public class DoEditController extends HttpServlet {
 
     private EventService service = new EventService();
+
+    // TODO get the date field filled in on edit page (take actualdate, convert to date ob)
 
     @Override
     protected void doPost(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
@@ -36,7 +35,7 @@ public class DoEditController extends HttpServlet {
                 String time = req.getParameter("time");
                 int id = Integer.parseInt(req.getParameter("id"));
 
-                EventBean event = new EventBean();
+                AgendaItem event = new AgendaItem();
 
                 event.setDate(date);
                 event.setDescription(description);
@@ -44,6 +43,7 @@ public class DoEditController extends HttpServlet {
                 event.setTime(time);
                 event.setNote(note);
                 event.setId(id);
+                event.setActualDate(d);
 
                 service.updateEvent(event, id);
                 req.setAttribute("event", event);
