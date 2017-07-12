@@ -1,9 +1,9 @@
--- phpMyAdmin SQL Dump
+﻿-- phpMyAdmin SQL Dump
 -- version 4.6.5.2
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Gegenereerd op: 07 jul 2017 om 14:13
+-- Gegenereerd op: 12 jul 2017 om 17:10
 -- Serverversie: 10.1.21-MariaDB
 -- PHP-versie: 7.1.2
 
@@ -31,8 +31,8 @@ CREATE TABLE `event_table` (
   `SUBJECT` varchar(30) NOT NULL,
   `DESCRIPTION` varchar(50) NOT NULL,
   `NOTE` varchar(50) NOT NULL,
-  `TIME` time NOT NULL,
-  `DATE` date NOT NULL
+  `TIME` varchar(10) NOT NULL,
+  `DATE` varchar(50) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
 
 --
@@ -40,8 +40,9 @@ CREATE TABLE `event_table` (
 --
 
 INSERT INTO `event_table` (`ID`, `SUBJECT`, `DESCRIPTION`, `NOTE`, `TIME`, `DATE`) VALUES
-(1, 'Test', 'Dit is een test', 'Test voor CI', '03:12:21', '2017-07-19'),
-(2, 'uiteten', 'witsand', 'ik wil pizza', '20:00:00', '2017-07-05');
+(4, 'Vakantie', 'Frankrijk met de fam', '', '04:15', 'zaterdag, 15 juli 2017'),
+(13, 'ESL', 'esl finale', 'finale tussen cloud9 en sk', '16:00', 'zondag, 09 juli 2017'),
+(14, 'PoE', 'grinding', '', '20:00', 'zondag, 09 juli 2017');
 
 -- --------------------------------------------------------
 
@@ -50,6 +51,7 @@ INSERT INTO `event_table` (`ID`, `SUBJECT`, `DESCRIPTION`, `NOTE`, `TIME`, `DATE
 --
 
 CREATE TABLE `users` (
+  `id` int(11) NOT NULL,
   `username` varchar(30) DEFAULT NULL,
   `password` varchar(50) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
@@ -58,9 +60,10 @@ CREATE TABLE `users` (
 -- Gegevens worden geëxporteerd voor tabel `users`
 --
 
-INSERT INTO `users` (`username`, `password`) VALUES
-('Maurits', '123'),
-('bas', '123');
+INSERT INTO `users` (`id`, `username`, `password`) VALUES
+(1, 'Maurits', '123'),
+(2, 'Bob', '123'),
+(3, 'Testuser', '123');
 
 --
 -- Indexen voor geëxporteerde tabellen
@@ -73,6 +76,12 @@ ALTER TABLE `event_table`
   ADD PRIMARY KEY (`ID`);
 
 --
+-- Indexen voor tabel `users`
+--
+ALTER TABLE `users`
+  ADD PRIMARY KEY (`id`);
+
+--
 -- AUTO_INCREMENT voor geëxporteerde tabellen
 --
 
@@ -80,7 +89,12 @@ ALTER TABLE `event_table`
 -- AUTO_INCREMENT voor een tabel `event_table`
 --
 ALTER TABLE `event_table`
-  MODIFY `ID` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=7;
+  MODIFY `ID` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=17;
+--
+-- AUTO_INCREMENT voor een tabel `users`
+--
+ALTER TABLE `users`
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=4;
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
 /*!40101 SET CHARACTER_SET_RESULTS=@OLD_CHARACTER_SET_RESULTS */;
 /*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
