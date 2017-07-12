@@ -58,9 +58,16 @@ public class ServletUtil {
         return null;
     }
 
+    // TODO calculate if a date has expired, delete the agenda item
+
+    public static String checkIfDateHasExpired(String date)
+    {
+
+        return "";
+    }
     /*
-            converts a date to name of the day + day number + name of the month + year
-            example: 2017-07-11 TO dinsdag, 07 juli 2017
+        converts a date to name of the day + day number + name of the month + year
+        example: 2017-07-11 TO dinsdag, 07 juli 2017
      */
     public static String convertDateToDayMonthYearFull(String date) {
         String[] months = {"januari", "februari", "maart", "april", "mei", "juni", "juli", "augustus", "september", "oktober",
@@ -91,6 +98,6 @@ public class ServletUtil {
         DateFormat dayNameFormat = new SimpleDateFormat("EEEE");
         String dayName = dayNameFormat.format(dt1);
 
-        return dayName + ", " + day + " " + months[monthNm-1] + " " + year;
+        return dayName + ", " + day + " " + months[monthNm - 1] + " " + year;
     }
 }
