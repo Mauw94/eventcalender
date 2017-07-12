@@ -5,7 +5,4 @@
 // TODO when you edit an item and forget the date it should display an error on the page and
 // TODO other fields should be kept filled in
 
-
-// TODO change header footer (to include)
-//       <include-prelude>/WEB-INF/views/header.html</include-prelude>
-//         <include-coda>/WEB-INF/views/footer.html</include-coda>
+// TODO get database from laptop -> pc
