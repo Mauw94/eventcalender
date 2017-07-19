@@ -65,7 +65,7 @@ public class ServletUtil {
     }
 
     // Check if a user is logged in to proceed
-    public static boolean checkIfUsesIsLoggedIn(HttpServletRequest request)
+    public static boolean checkIfUserIsLoggedIn(HttpServletRequest request)
     {
         UserAccount user = ServletUtil.getLogedinUser(request.getSession());
         return user != null;

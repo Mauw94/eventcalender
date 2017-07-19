@@ -11,7 +11,6 @@ import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 import java.io.IOException;
 
-@SuppressWarnings("ALL")
 @WebServlet("/doAdd")
 public class DoAddController extends HttpServlet {
 
@@ -35,7 +34,7 @@ public class DoAddController extends HttpServlet {
 
         AgendaItem event = new AgendaItem();
 
-        if (description.length() > 0 && description != null && subject.length() > 0 && subject != null) {
+        if (description.length() > 0 && subject.length() > 0) {
             event.setSubject(subject);
             event.setDescription(description);
             event.setNote(note);

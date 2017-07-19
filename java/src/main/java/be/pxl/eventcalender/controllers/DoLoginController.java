@@ -19,7 +19,7 @@ public class DoLoginController extends HttpServlet {
 
         String password = req.getParameter("password");
         String userName = req.getParameter("username");
-        String errorMessage = null;
+        String errorMessage;
         UserAccount user;
 
         if (userName != null && password != null && userName.length() > 0 && password.length() > 0) {

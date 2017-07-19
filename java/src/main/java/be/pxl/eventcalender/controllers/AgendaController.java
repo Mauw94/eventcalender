@@ -2,7 +2,6 @@ package be.pxl.eventcalender.controllers;
 
 import be.pxl.eventcalender.Util.ServletUtil;
 import be.pxl.eventcalender.models.AgendaItem;
-import be.pxl.eventcalender.models.UserAccount;
 import be.pxl.eventcalender.services.EventService;
 
 import javax.servlet.ServletException;
@@ -21,8 +20,7 @@ public class AgendaController extends HttpServlet {
     @Override
     protected void doGet(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
 
-        UserAccount user = ServletUtil.getLogedinUser(req.getSession());
-        if (user != null) {
+        if (ServletUtil.checkIfUserIsLoggedIn(req)) {
             String userName = ServletUtil.getUserNameInCookie(req);
             List<AgendaItem> eventList = service.getAllEvents();
             System.out.println(eventList);

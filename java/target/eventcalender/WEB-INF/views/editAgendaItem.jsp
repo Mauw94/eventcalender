@@ -16,7 +16,7 @@
         </div>
         <div class="form-group">
             <label class="label label-info">Date</label>
-            <input type="date" value="${event.date}" placeholder="date" name="date" class="form-control">
+            <input type="date" value="${event.actualDate}" placeholder="date" name="date" class="form-control">
         </div>
         <div class="form-group">
             <label class="label label-info">Time</label>

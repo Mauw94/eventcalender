@@ -21,10 +21,9 @@ public class TaskController extends HttpServlet{
     @Override
     protected void doGet(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
 
-        UserAccount user = ServletUtil.getLogedinUser(req.getSession());
         String errorMessage;
-        List<Task> taskList = null;
-        if (user != null) {
+        List<Task> taskList;
+        if (ServletUtil.checkIfUserIsLoggedIn(req)) {
             taskList = service.getAllTasks();
             String message = "Nothing to show here yet.";
             req.setAttribute("message", message);

@@ -22,10 +22,9 @@ public class DoEditController extends HttpServlet {
     @Override
     protected void doPost(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
 
-        UserAccount user = ServletUtil.getLogedinUser(req.getSession());
         String errorMessage;
 
-        if (user != null) {
+        if (ServletUtil.checkIfUserIsLoggedIn(req)) {
             String subject = req.getParameter("subject");
             String description = req.getParameter("description");
             String note = req.getParameter("note");

@@ -63,9 +63,8 @@ public class DAOUtil {
         }
     }
 
-    public static boolean addEventItem(AgendaItem event) throws SQLException, ClassNotFoundException {
+    public static void addEventItem(AgendaItem event) throws SQLException, ClassNotFoundException {
         String sql = "INSERT INTO event_table(SUBJECT, DESCRIPTION, NOTE, TIME, DATE, ACTUALDATE) VALUES(?,?,?,?,?, ?)";
-        boolean added;
         try (Connection con = MySQLConnUtils.getMySQLConnection()) {
             try (PreparedStatement statement = con.prepareStatement(sql)) {
                 statement.setString(1, event.getSubject());
@@ -74,9 +73,8 @@ public class DAOUtil {
                 statement.setString(4, event.getTime());
                 statement.setString(5, event.getDate());
                 statement.setString(6, event.getActualDate());
-                added = statement.execute();
+                statement.execute();
                 con.close();
-                return added;
             }
         }
     }
@@ -167,11 +165,13 @@ public class DAOUtil {
                     String note = rs.getString(4);
                     String time = rs.getString(5);
                     String date = rs.getString(6);
+                    String actualDate = rs.getString(7);
 
                     event.setId(eventId);
                     event.setSubject(subject);
                     event.setDescription(description);
                     event.setDate(date);
+                    event.setActualDate(actualDate);
                     event.setNote(note);
                     event.setTime(time);
                     return event;

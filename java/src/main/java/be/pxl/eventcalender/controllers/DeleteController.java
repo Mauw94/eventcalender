@@ -19,8 +19,7 @@ public class DeleteController extends HttpServlet {
     @Override
     protected void doGet(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
 
-        UserAccount user = ServletUtil.getLogedinUser(req.getSession());
-        if (user != null) {
+        if (ServletUtil.checkIfUserIsLoggedIn(req)) {
             int id = Integer.parseInt(req.getParameter("id"));
             AgendaItem event = service.getEventById(id);
             req.setAttribute("event", event);
