@@ -24,7 +24,7 @@
         </div>
         <div class="form-group">
             <input type="hidden" name="id" value="${event.id}">
-            <a href="details?id=${event.id}" class="btn btn-default btn-md">Back</a>
+            <a href="agendaDetails?id=${event.id}" class="btn btn-default btn-md">Back</a>
             <input type="submit" value="Confirm Changes" class="btn btn-info btn-md">
         </div>
     </form>

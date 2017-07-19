@@ -25,6 +25,7 @@ public class AgendaController extends HttpServlet {
         if (user != null) {
             String userName = ServletUtil.getUserNameInCookie(req);
             List<AgendaItem> eventList = service.getAllEvents();
+            System.out.println(eventList);
             req.setAttribute("userName", userName);
             req.setAttribute("eventList", eventList);
             req.getRequestDispatcher("/WEB-INF/views/agendaPage.jsp").forward(req, resp);

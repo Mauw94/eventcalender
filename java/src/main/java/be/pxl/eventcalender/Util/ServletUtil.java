@@ -4,6 +4,7 @@ import be.pxl.eventcalender.models.UserAccount;
 import be.pxl.eventcalender.services.EventService;
 
 import javax.servlet.http.*;
+import java.rmi.server.ServerCloneException;
 import java.text.DateFormat;
 import java.text.ParseException;
 import java.text.SimpleDateFormat;
@@ -61,6 +62,13 @@ public class ServletUtil {
             }
         }
         return null;
+    }
+
+    // Check if a user is logged in to proceed
+    public static boolean checkIfUsesIsLoggedIn(HttpServletRequest request)
+    {
+        UserAccount user = ServletUtil.getLogedinUser(request.getSession());
+        return user != null;
     }
 
     /*
