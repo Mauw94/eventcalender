@@ -16,7 +16,7 @@ public class AddController extends HttpServlet {
     protected void doGet(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
 
         if (ServletUtil.checkIfUserIsLoggedIn(req)) {
-            req.getRequestDispatcher("/WEB-INF/views/addAgendaItem.jsp").forward(req, resp);
+            req.getRequestDispatcher("/WEB-INF/views/agendaCreate.jsp").forward(req, resp);
         } else {
             String errorMessage = "Login to have further access.";
             req.getSession().setAttribute("errorMessage", errorMessage);
