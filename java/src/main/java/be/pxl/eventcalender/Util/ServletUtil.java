@@ -51,7 +51,7 @@ public class ServletUtil {
         }
     }
 
-    // Get username from Cookie
+    // Get username saved from Cookie
     public static String getUserNameInCookie(HttpServletRequest request) {
         Cookie[] cookies = request.getCookies();
         if (cookies != null) {
