@@ -11,11 +11,26 @@
             <input class="form-control" name="description">
         </div>
         <div class="form-group">
-            <label class="label label-info">Estimated time </label>
-            <input class="form-control" name="estimated">
+            <label class="label label-info">Estimated duration </label>
+            <input  class="form-control" name="estimated">
         </div>
-        <div class="form-group"></div>
-        <div class="form-group"></div>
+        <div class="form-group">
+            <label class="label label-info">Fixed duration </label>
+            <input class="form-control" name="duration">
+        </div>
+        <div class="form-group">
+            <input type="checkbox" name="finished" id="finished" autocomplete="off" />
+            <div class="btn-group">
+                <label for="finished" class="btn btn-default">
+                    <span class="glyphicon glyphicon-ok"></span>
+                    <span></span>
+                </label>
+            </div>
+        </div>
+        <div class="form-group">
+            <a href="task" class="btn btn-default">Back</a>
+            <input class="btn btn-info" type="submit" value="Create task">
+        </div>
     </form>
 </div>
 <%@include file="footer.jsp" %>

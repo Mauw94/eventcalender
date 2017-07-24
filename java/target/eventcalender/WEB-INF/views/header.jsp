@@ -16,6 +16,27 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 
     <style>
+        .form-group input[type="checkbox"] {
+            display: none;
+        }
+
+        .form-group input[type="checkbox"] + .btn-group > label span {
+            width: 20px;
+        }
+
+        .form-group input[type="checkbox"] + .btn-group > label span:first-child {
+            display: none;
+        }
+        .form-group input[type="checkbox"] + .btn-group > label span:last-child {
+            display: inline-block;
+        }
+
+        .form-group input[type="checkbox"]:checked + .btn-group > label span:first-child {
+            display: inline-block;
+        }
+        .form-group input[type="checkbox"]:checked + .btn-group > label span:last-child {
+            display: none;
+        }
         body {
             background: #dbdbdb url("${pageContext.request.contextPath}resources/images/webbg.jpg") no-repeat fixed;
         }

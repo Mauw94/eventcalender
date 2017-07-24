@@ -79,6 +79,21 @@ public class DAOUtil {
         }
     }
 
+    public static void addTask(Task task) throws SQLException, ClassNotFoundException {
+        String sql = "INSERT INTO tasks (SUBJECT, DESCRIPTION, DURATION, ESTIMATED, FINISHED) VALUES(?,?,?,?,?)";
+        try (Connection con = MySQLConnUtils.getMySQLConnection()) {
+            try (PreparedStatement statement = con.prepareStatement(sql)) {
+                statement.setString(1, task.getSubject());
+                statement.setString(2, task.getDescription());
+                statement.setInt(3, task.getDuration());
+                statement.setInt(4, task.getEstimated());
+                statement.setBoolean(5, task.isFinished());
+                statement.execute();
+                con.close();
+            }
+        }
+    }
+
     public static List<AgendaItem> getAllEvents() throws SQLException, ClassNotFoundException {
         List<AgendaItem> agendaItemList = new ArrayList<>();
         String sql = "SELECT * FROM event_table";

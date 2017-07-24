@@ -24,6 +24,6 @@
         </tbody>
     </table>
     <hr color="black">
-    <a href="add" class="btn btn-info btn-md">Add new task</a>
+    <a href="addTask" class="btn btn-info btn-md">Add new task</a>
 </div>
 <%@ include file="footer.jsp"%>

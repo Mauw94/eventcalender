@@ -60,6 +60,16 @@ public class EventService {
         return taskList;
     }
 
+    public void AddTask(Task task) {
+        try {
+            DAOUtil.addTask(task);
+        } catch (SQLException e) {
+            e.printStackTrace();
+        } catch (ClassNotFoundException e) {
+            e.printStackTrace();
+        }
+    }
+
     public AgendaItem getEventById(int id) {
         AgendaItem event = new AgendaItem();
         try {

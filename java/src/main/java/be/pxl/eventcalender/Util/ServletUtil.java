@@ -21,7 +21,6 @@ public class ServletUtil {
     private static final String ATT_NAME_USER_NAME = "ATTRIBUTE_FOR_STORE_USER_IN_COOKIE";
     private static String[] months = {"januari", "februari", "maart", "april", "mei", "juni", "juli", "augustus", "september", "oktober",
             "november", "december"};
-    private static EventService service = new EventService();
 
     // Store logined user
     public static void storeLogedinUser(HttpSession session, UserAccount logedinUser) {
@@ -79,19 +78,14 @@ public class ServletUtil {
 
         // get the day
         String day = date.substring(8, 10);
-
         // get the month
         String month = date.substring(6, 7);
-
         // change to int for use in array
         int monthNm = Integer.parseInt(month);
-
         // get the current year
         int year = Calendar.getInstance().get(Calendar.YEAR);
-
         // create date string
         String newDate = day + "/" + month + "/" + year;
-
         // create new date object with newDate and get the name of the day + name of the month
         SimpleDateFormat dateFormat = new SimpleDateFormat("dd/MM/yyyy");
         Date dt1 = null;

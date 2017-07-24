@@ -13,7 +13,7 @@ import java.io.IOException;
 import java.util.List;
 
 @WebServlet("/events")
-public class AgendaController extends HttpServlet {
+public class AddAgendaController extends HttpServlet {
 
     private EventService service = new EventService();
 
