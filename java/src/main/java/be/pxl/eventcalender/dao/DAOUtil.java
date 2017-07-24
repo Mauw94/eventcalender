@@ -157,13 +157,12 @@ public class DAOUtil {
 
     public static void deleteEvent(int id) throws SQLException, ClassNotFoundException {
         String sql = "DELETE FROM event_table WHERE ID = ?";
-        try (Connection con = MySQLConnUtils.getMySQLConnection()) {
-            try (PreparedStatement statement = con.prepareStatement(sql)) {
-                statement.setInt(1, id);
-                statement.execute();
-                con.close();
-            }
-        }
+        deleteItemFromDatabase(id, sql);
+    }
+
+    public static void deleteTask(int id) throws SQLException, ClassNotFoundException {
+        String sql = "DELETE FROM tasks WHERE ID = ?";
+        deleteItemFromDatabase(id, sql);
     }
 
     public static AgendaItem getEventById(int id) throws SQLException, ClassNotFoundException {
@@ -197,6 +196,35 @@ public class DAOUtil {
         }
     }
 
+    public static Task getTaskById(int id) throws SQLException, ClassNotFoundException {
+        String sql = "SELECT * FROM tasks WHERE ID = ?";
+        try (Connection con = MySQLConnUtils.getMySQLConnection()) {
+            try (PreparedStatement stmt = con.prepareStatement(sql)) {
+                stmt.setInt(1, id);
+                ResultSet rs = stmt.executeQuery();
+                if (rs.next()) {
+                    Task task = new Task();
+                    int taskId = rs.getInt(1);
+                    String subject = rs.getString(2);
+                    String description = rs.getString(3);
+                    int duration = rs.getInt(4);
+                    int estimated = rs.getInt(5);
+                    boolean finished = rs.getBoolean(6);
+
+                    task.setFinished(finished);
+                    task.setEstimated(estimated);
+                    task.setDuration(duration);
+                    task.setDescription(description);
+                    task.setSubject(subject);
+                    task.setId(taskId);
+                    return task;
+                } else {
+                    return null;
+                }
+            }
+        }
+    }
+
     public static String getEventActualDate(int id) throws SQLException, ClassNotFoundException {
         String sql = "SELECT ACTUALDATE FROM event_table WHERE id = ?";
         try (Connection con = MySQLConnUtils.getMySQLConnection()) {
@@ -208,6 +236,16 @@ public class DAOUtil {
                 } else {
                     return null;
                 }
+            }
+        }
+    }
+
+    private static void deleteItemFromDatabase(int id, String sql) throws SQLException, ClassNotFoundException {
+        try (Connection con = MySQLConnUtils.getMySQLConnection()) {
+            try (PreparedStatement statement = con.prepareStatement(sql)) {
+                statement.setInt(1, id);
+                statement.execute();
+                con.close();
             }
         }
     }

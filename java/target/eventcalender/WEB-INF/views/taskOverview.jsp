@@ -7,7 +7,6 @@
             <th class="info">Subject</th>
             <th class="info">Duration</th>
             <th class="info">Estimated</th>
-            <th class="info">Details</th>
             <th class="info">Delete?</th>
         </tr>
         </thead>
@@ -17,8 +16,7 @@
                 <td>${task.subject}</td>
                 <td>${task.duration}</td>
                 <td>${task.estimated}</td>
-                <td><a href="?id=${task.id}" class="btn btn-sm btn-success">Details</a></td>
-                <td><a href="?id=${task.id}" class="btn btn-danger btn-sm">Delete</a></td>
+                <td><a href="deleteTask?id=${task.id}" class="btn btn-danger btn-sm">Delete</a></td>
             </tr>
         </c:forEach>
         </tbody>

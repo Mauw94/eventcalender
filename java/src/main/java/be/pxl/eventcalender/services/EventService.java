@@ -21,6 +21,16 @@ public class EventService {
         return user;
     }
 
+    public Task getTaskById(int id) {
+        Task task = new Task();
+        try {
+            task = DAOUtil.getTaskById(id);
+        } catch (SQLException | ClassNotFoundException e) {
+            e.printStackTrace();
+        }
+        return task;
+    }
+
     public boolean insertUser(UserAccount user) {
         boolean updated = false;
         try {
@@ -63,9 +73,7 @@ public class EventService {
     public void AddTask(Task task) {
         try {
             DAOUtil.addTask(task);
-        } catch (SQLException e) {
-            e.printStackTrace();
-        } catch (ClassNotFoundException e) {
+        } catch (SQLException | ClassNotFoundException e) {
             e.printStackTrace();
         }
     }
@@ -96,6 +104,13 @@ public class EventService {
         }
     }
 
+    public void deleteTask(int id) {
+        try {
+            DAOUtil.deleteTask(id);
+        } catch (SQLException | ClassNotFoundException e) {
+            e.printStackTrace();
+        }
+    }
     public String getEventActualDate(int id) {
         String date = "";
         try {

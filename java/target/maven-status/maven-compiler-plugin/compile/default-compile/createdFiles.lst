@@ -8,6 +8,8 @@ be\pxl\eventcalender\controllers\DoLoginController.class
 be\pxl\eventcalender\Util\ServletUtil.class
 be\pxl\eventcalender\controllers\DeleteController.class
 be\pxl\eventcalender\controllers\DoAddController.class
+be\pxl\eventcalender\controllers\DoDeleteTask.class
+be\pxl\eventcalender\controllers\DeleteTaskController.class
 be\pxl\eventcalender\controllers\LoginController.class
 be\pxl\eventcalender\controllers\PageSwitchController.class
 be\pxl\eventcalender\controllers\HomeController.class

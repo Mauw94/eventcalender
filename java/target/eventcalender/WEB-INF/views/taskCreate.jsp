@@ -19,6 +19,7 @@
             <input class="form-control" name="duration">
         </div>
         <div class="form-group">
+            <label class="label label-info">Finished? </label>
             <input type="checkbox" name="finished" id="finished" autocomplete="off" />
             <div class="btn-group">
                 <label for="finished" class="btn btn-default">
