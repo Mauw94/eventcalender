@@ -17,8 +17,6 @@ public class DoEditController extends HttpServlet {
 
     private EventService service = new EventService();
 
-    // TODO get the date field filled in on edit page (take actualdate, convert to date ob)
-
     @Override
     protected void doPost(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
 

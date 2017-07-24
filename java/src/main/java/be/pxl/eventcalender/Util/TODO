@@ -1,7 +1,10 @@
 
             // TODO + time worked etc
-        // TODO fix bg image
+            // TODO fix bg image
+            // TODO fix checkbox on task create screen, doesn't work atm
 
-// TODO when you edit an item and forget the date it should display an error on the page and
-// TODO other fields should be kept filled in
+            // TODO rework task database for clearer content (durations etc, check Jira)
+            // TODO add details button on task page
+            // TODO create edit page for tasks, can add comments there 
+
 
