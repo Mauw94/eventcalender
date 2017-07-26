@@ -4,7 +4,7 @@
             // TODO fix checkbox on task create screen, doesn't work atm
 
             // TODO rework task database for clearer content (durations etc, check Jira)
-            // TODO add details button on task page
-            // TODO create edit page for tasks, can add comments there 
+            // TODO add details option in task page
+            // TODO create edit page for tasks, can add comments there
 
 

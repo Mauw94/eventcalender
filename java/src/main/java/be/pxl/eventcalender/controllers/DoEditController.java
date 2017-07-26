@@ -47,7 +47,7 @@ public class DoEditController extends HttpServlet {
                 req.getRequestDispatcher("/WEB-INF/views/edited.jsp").forward(req, resp);
             } else {
                 errorMessage = "Fill in the date.";
-                req.getSession().setAttribute("errprEdit", errorMessage);
+                req.getSession().setAttribute("errorEdit", errorMessage);
                 req.getRequestDispatcher("/WEB-INF/views/editAgendaItem.jsp").forward(req, resp);
             }
 
