@@ -1,4 +1,5 @@
 C:\Users\Maurits\Documents\Git\eventcalender\java\src\main\java\be\pxl\eventcalender\controllers\DoCreateTask.java
+C:\Users\Maurits\Documents\Git\eventcalender\java\src\main\java\be\pxl\eventcalender\controllers\DoDeleteTask.java
 C:\Users\Maurits\Documents\Git\eventcalender\java\src\main\java\be\pxl\eventcalender\controllers\EditAgendaItemController.java
 C:\Users\Maurits\Documents\Git\eventcalender\java\src\main\java\be\pxl\eventcalender\controllers\LogoutController.java
 C:\Users\Maurits\Documents\Git\eventcalender\java\src\main\java\be\pxl\eventcalender\controllers\DoAddController.java
@@ -14,10 +15,12 @@ C:\Users\Maurits\Documents\Git\eventcalender\java\src\main\java\be\pxl\eventcale
 C:\Users\Maurits\Documents\Git\eventcalender\java\src\main\java\be\pxl\eventcalender\controllers\AddController.java
 C:\Users\Maurits\Documents\Git\eventcalender\java\src\main\java\be\pxl\eventcalender\controllers\DoCreateAccountController.java
 C:\Users\Maurits\Documents\Git\eventcalender\java\src\main\java\be\pxl\eventcalender\controllers\CreateAccountController.java
+C:\Users\Maurits\Documents\Git\eventcalender\java\src\main\java\be\pxl\eventcalender\controllers\TaskDetailsController.java
 C:\Users\Maurits\Documents\Git\eventcalender\java\src\main\java\be\pxl\eventcalender\Util\ServletUtil.java
 C:\Users\Maurits\Documents\Git\eventcalender\java\src\main\java\be\pxl\eventcalender\services\EventService.java
 C:\Users\Maurits\Documents\Git\eventcalender\java\src\main\java\be\pxl\eventcalender\models\Task.java
 C:\Users\Maurits\Documents\Git\eventcalender\java\src\main\java\be\pxl\eventcalender\controllers\AgendaDetailsController.java
+C:\Users\Maurits\Documents\Git\eventcalender\java\src\main\java\be\pxl\eventcalender\controllers\DeleteTaskController.java
 C:\Users\Maurits\Documents\Git\eventcalender\java\src\main\java\be\pxl\eventcalender\controllers\UserInfoController.java
 C:\Users\Maurits\Documents\Git\eventcalender\java\src\main\java\be\pxl\eventcalender\controllers\AddTaskController.java
 C:\Users\Maurits\Documents\Git\eventcalender\java\src\main\java\be\pxl\eventcalender\controllers\LoginController.java

@@ -16,6 +16,7 @@ be\pxl\eventcalender\controllers\HomeController.class
 be\pxl\eventcalender\controllers\LogoutController.class
 be\pxl\eventcalender\controllers\TaskController.class
 be\pxl\eventcalender\controllers\CreateAccountController.class
+be\pxl\eventcalender\controllers\TaskDetailsController.class
 be\pxl\eventcalender\controllers\DoDeleteController.class
 be\pxl\eventcalender\models\UserAccount.class
 be\pxl\eventcalender\controllers\AddController.class

@@ -4,15 +4,15 @@
     <form method="post" action="doEdit">
         <div class="form-group">
             <label class="label label-info">Subject</label>
-            <input type="text" value="${event.subject}" placeholder="subject" name="subject" class="form-control">
+            <input value="${event.subject}" placeholder="subject" name="subject" class="form-control">
         </div>
         <div class="form-group">
             <label class="label label-info">Description</label>
-            <input type="text" value="${event.description}" placeholder="description" name="description" class="form-control">
+            <input value="${event.description}" placeholder="description" name="description" class="form-control">
         </div>
         <div class="form-group">
             <label class="label label-info">Note</label>
-            <input type="text" value="${event.note}" placeholder="note" name="note" class="form-control">
+            <input value="${event.note}" placeholder="note" name="note" class="form-control">
         </div>
         <div class="form-group">
             <label class="label label-info">Date</label>
